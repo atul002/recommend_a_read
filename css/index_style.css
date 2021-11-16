@@ -129,9 +129,14 @@ body {
 }
 
 
-@media only screen and(max-width) {
+@media only screen and (max-width: 600px){
+    .main-container {
+        padding: 10px;
+    }
 
-    
+    .main-container h1{
+
+    }
     
 }
 .search-container {
