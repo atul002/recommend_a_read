@@ -8,7 +8,12 @@ body {
     font-size: 14px;
     width: 100%;
     font-family: 'Ubuntu', sans-serif;
-    
+}
+
+@media only screen and (max-width: 600px){
+    body {
+        font-size: 12px;
+    }    
 }
 
 .header-container {
@@ -23,6 +28,18 @@ body {
     width: 50%;
 }
 
+@media only screen and (max-width: 600px){
+    .header-container {
+        display: block;
+    }
+
+    .logo-area,
+    .nav {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 .logo-area img {
     max-width: 300px;
 }
@@ -34,6 +51,21 @@ body {
     margin: 15px 0px;
 }
 
+@media only screen and (max-width: 600px){
+    .logo-area img {
+        height: 60px;
+    }    
+
+    .nav ul {
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+         
+    }
+}
+
+
+
 .nav ul li {
     list-style: none;
     display: block;
@@ -44,17 +76,35 @@ body {
 .nav ul li a {
     padding: 15px 15px;
     text-decoration: none;
-        color: rgb(36, 33, 33);
+    color: rgb(36, 33, 33);
     font-size: large;
     color: #626260;
 }
-
 
 .nav ul li a:hover {
     border-bottom: 5px solid #f9705a;
     color: #f9705a;
     transition: .1s;
 }
+
+@media only screen and (max-width: 600px){
+    .nav ul li {
+        float: none;
+        margin: 0;
+    }
+
+    .nav ul li a {
+        font-size: small;
+        margin: 0px 5px;
+        padding: 0px 5px;
+
+    }
+
+}
+
+
+
+
 
 .active {
     font-weight: bolder;
