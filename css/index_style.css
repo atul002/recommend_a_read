@@ -28,7 +28,7 @@ body {
     width: 50%;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 720px){
     .header-container {
         display: block;
         padding-bottom: 10px;
@@ -52,7 +52,7 @@ body {
     margin: 15px 0px;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 720px){
     .logo-area img {
         height: 60px;
     }    
@@ -88,7 +88,7 @@ body {
     transition: .1s;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 720px){
     .nav ul li {
         float: none;
         margin: 0;
@@ -97,7 +97,7 @@ body {
     .nav ul li a {
         font-size: 100%;
         margin: 0px 5px;
-        padding: 0px 5px 5px 0px;
+        padding: 5px 5px 5px 5px;
 
     }
 
