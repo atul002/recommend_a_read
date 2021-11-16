@@ -5,7 +5,7 @@
 }
 
 body {
-    font-size: 15px;
+    font-size: 14px;
     width: 100%;
     font-family: 'Ubuntu', sans-serif;
     
@@ -239,4 +239,45 @@ body {
     padding: 5px;
     border: 2px solid #fff;
     border-radius: 8px;
+}
+
+footer {
+    background-color: rgb(94, 94, 94);
+    color: #fff;
+}
+.footer-container {
+    max-width: 980px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer-top {
+    margin: 10px auto;
+    padding: 20px 0px 10px 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-top ul {
+    display: inline-flex;
+}
+.footer-top ul li {
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+}
+.footer-top ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.footer-top ul li a:hover {
+    color: #e0b472;
+    background-color: #3f3f3c;
+    padding: 10px;
+}
+
+.footer-bottom {
+    padding: 0px 20px 20px 0px;
 }
