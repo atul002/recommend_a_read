@@ -213,8 +213,8 @@ body {
     background-color: #fff;
     border: 1px solid #ddd;
     width: calc(25% - 60px);
-    height: 80px;
-    margin: 10px;
+    height: 100px;
+    margin: 15px;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -228,57 +228,67 @@ body {
     border-color: #e0b472;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: 1s;
+    background-position: center;
     color: transparent;
+    transition: .2s;
+    
 }
 
 .cat-1:hover,
 .cat-1:focus {
-    background-image: url(../images/science_fiction.png);
-
+    background-image: url(../images/science_fiction.png); 
 }
 
 .cat-2:hover,
 .cat-2:focus {
     background-image: url(../images/adventure.png);
-
 }
+
 .cat-3:hover,
 .cat-3:focus {
     background-image: url(../images/fantasy.png);
 }
+
 .cat-4:hover,
 .cat-4:focus {
     background-image: url(../images/time_travel.png);
 }
+
 .cat-5:hover,
 .cat-5:focus {
     background-image: url(../images/young_adult.png);
 }
+
 .cat-6:hover,
 .cat-6:focus {
     background-image: url(../images/romance.png);
 }
+
 .cat-7:hover,
 .cat-7:focus {
     background-image: url(../images/thriller.png);
 }
+
 .cat-8:hover,
 .cat-8:focus {
     background-image: url(../images/horro.png);
 }
+
 .cat-9:hover,
 .cat-9:focus {
     background-image: url(../images/mystery.png);
 }
+
 .cat-10:hover,
 .cat-10:focus {
     background-image: url(../images/drama.png);
 }
+
 .cat-11:hover,
 .cat-11:focus {
     background-image: url(../images/biography.png);
 }
+
 .cat-12:hover,
 .cat-12:focus {
     background-image: url(../images/non_fiction.png);
@@ -302,8 +312,9 @@ body {
 
     .categories {
         width: calc(50% - 30px);
-        padding: 10px;
-        height: 50px;
+        padding: 15px;
+        margin:5px ;
+        height: 80px;
     }
 }
 .quote-container {
