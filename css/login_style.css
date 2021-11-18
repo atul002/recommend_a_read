@@ -4,7 +4,6 @@
     padding: 0;
 }
 
-
 body {
     font-size: 14px;
     width: 100%;
@@ -16,6 +15,7 @@ body {
     background-repeat: repeat-x;
 
 }
+
 @media only screen and (max-width: 600px){
     body {
         font-size: 12px;
