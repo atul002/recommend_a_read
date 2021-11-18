@@ -9,7 +9,6 @@ body {
     width: 100%;
     font-family: 'Ubuntu', sans-serif;
 
-
     background: linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
     radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255,255,255,0) 0) 0 0,
     radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #48B;
@@ -51,7 +50,7 @@ body {
 }
 
 .login-logo img {
-    height: 40px;
+    height: 50px;
 }
 
 .login-data h1 {
@@ -89,7 +88,6 @@ input:hover,
     opacity: 1;
 }
 
-/* add appropriate colors to fb, twitter and google buttons */
 .fb {
     background-color: #3B5998;
     color: white;
@@ -150,12 +148,25 @@ input[type=password] {
 
 .forget-password {
     float: right;
+    
+}
+
+.forget-password a {
     font-weight: bold;
+    padding: 5px 10px;
+    background-color: #607d8b;
+    color: white;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.forget-password a:hover {
+    background-color: #e42626;
 }
 
 .form-container button {
 
-    background-color: #4686cf; /* Green */
+    background-color: #4686cf;
     border: none;
     color: white;
     padding: 5px 15px;
@@ -166,10 +177,14 @@ input[type=password] {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
 
 }
+
+.form-container button:hover {
+    background-color: rgb(90, 196, 90);
+}
+
 
 @media only screen and (max-width: 720px){
     .login-data {
