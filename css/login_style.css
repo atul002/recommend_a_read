@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+
 body {
     font-size: 14px;
     width: 100%;
@@ -12,12 +13,9 @@ body {
     background: linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
     radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255,255,255,0) 0) 0 0,
     radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #48B;
-    background-size: 110px 200px;
     background-repeat: repeat-x;
 
-
 }
-
 @media only screen and (max-width: 600px){
     body {
         font-size: 12px;
