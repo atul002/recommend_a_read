@@ -212,7 +212,7 @@ body {
     color: #4e4e4e;
     background-color: #fff;
     border: 1px solid #ddd;
-    width: calc(25% - 60px);
+    width: 25%;
     height: 100px;
     margin: 15px;
     padding: 20px;
