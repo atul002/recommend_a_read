@@ -1,0 +1,335 @@
+/*Declaring color values*/
+$bg_color1: #EEEEEE;
+$bg_color2: #686c70;
+$font_color: #444a55c4;
+$heading_color: #222831;
+
+
+html {
+    font-size: 15px;
+}
+/*Defining body values*/
+body {
+    box-sizing: border-box;
+    background-color: $bg_color1;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Styling Container begins*/
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+//    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+    /*Header Styling begins*/
+    .header {
+        display: flex;
+        padding: 1rem;
+        margin: 1rem;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $bg_color1;
+    
+        
+        /*Display-pic block styling begins*/
+        .display-pic{ 
+            display: flex;
+            align-items: center;
+
+            /*Display picture styling begins*/
+            img {
+                height: 8rem;
+                width: 8rem;
+                border-radius: 50%;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+            }
+            /*Display picture styling ends*/
+
+            h1 {
+                margin:0 .5rem 0 .5rem;
+            }
+        }
+        /*Display-pic block styling ends*/
+
+        
+
+        /*Contact block styling begins*/
+        .contact {           
+            .gmail,
+            .mobile,
+            .linkedin,
+            .github {
+                display: flex;
+                align-items: center;
+
+                p {
+                    margin: 0;
+                }
+                a {
+                    text-decoration: none;
+                    color: black;
+                    display: flex;
+                }
+            }
+
+            /*svg logo sizing begins*/
+            svg {
+                height: 1rem;
+                width: 1rem;
+                margin: .2rem .5rem .2rem 1rem;
+            }
+            /*svg logo sizing ends*/
+        }
+        /*Contact block styling ends*/
+
+        
+    }
+    /*Header Styling ends*/
+
+    /*carrer objective block styling starts*/
+    .career-obj {
+        border-bottom: 1px solid $bg_color1;
+        margin: 1rem;
+        padding: 0 0 .5rem 0;
+
+        h2 {
+            margin: 0;
+            font-size: 1.3rem;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+    /*carrer objective block styling ends*/
+    
+    /*col-cotainer styling begins*/
+    .col-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1rem;
+        justify-content: space-between;
+        gap: 10%;
+
+        h2 {
+            font-size: 1.3rem;
+            margin: 0;
+        }
+
+        h3 {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        h4 {
+            margin: 0;
+            font-size: 1rem;
+        }
+        
+        h5 {
+            margin: 0 0 1rem 0;
+        }
+
+        .duration-location {
+            display: flex;
+            gap: 6rem;
+        }
+        .left,
+        .right {
+            margin: 0;
+            font-size: .9rem;
+            font-style: italic;
+        }
+
+        
+
+        .column-1 {
+            flex: 45%;
+            
+            .pg,
+            .ug,
+            .intermediate,
+            .high-school {
+                padding-left: 1rem;
+                border-left: .3rem solid $bg_color1;
+            }
+            ul {
+                padding: 0 0 1.5rem 1.2rem;
+                margin: 0;
+            }
+        }
+
+        .column-2 {
+            flex: 45%;
+
+            ul {
+                padding: 0;
+                margin: 0;
+            }
+ 
+            p {
+                 margin: 0;
+            }
+
+            .skills {
+                
+                    .skill-type {
+                        list-style: none;
+                        padding-left: 1rem;
+                        border-left: .3rem solid $bg_color1;
+                        margin: .5rem auto;
+                        
+                        p {
+                        font-weight: bold;
+                        padding: .2rem;
+                    }
+                }
+                .languages {
+                    display: flex;
+                    align-items: center;
+                    gap: .5rem;
+                    justify-content: start;
+                    padding: .2rem;
+                    flex-wrap: wrap;
+
+                    li {
+                        list-style: none;
+                        padding: .2rem .5rem;
+                        background-color: $bg_color2;
+                        color: white;
+                        border-radius: 3px;
+                        font-size: .9rem ;
+                    }
+                }
+            }
+
+
+            .projects {
+                margin: 1rem auto;
+
+                ul {              
+                    padding: 0;
+                    li {
+                        list-style: none;
+                        padding-left: 1rem;
+                        border-left: .3rem solid $bg_color1;
+                    }
+                }
+
+                .online-class,
+                .book-rec,
+                .library {
+                    margin: 1rem 0 0 0;
+
+                    a {
+                        color: black;
+                    }
+                    .project-duration {
+                        font-style: italic;
+                        font-size: .8rem;
+                    }
+
+                    .project-desc,
+                    .project-tech-stack {
+                        margin: .5rem auto;
+                        font-size: .9rem;
+
+                        .description,
+                        .tech-stack {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            
+
+            
+        }
+    }
+    /*col-cotainer styling ends*/
+
+}
+/*Styling Container ends*/
+
+
+/*Medial Query to style header starts*/
+@media only screen and(max-width:720px) {
+        
+    .container {
+        max-width: 100%;
+        padding: 0;
+        
+        .col-container {
+            gap: 1rem;
+            
+            .right {
+                margin-right: 1rem;
+            }
+
+            .duration-location {
+                justify-content: space-between;
+            }
+            .column-1,
+            .column-2 {
+                flex: 45%;
+                }
+
+        }
+
+        .header {
+            padding: .5rem;
+            .display-pic img {
+                height: 5rem;
+                width: 5rem;
+            }
+
+            h1 {
+                font-size: 1.3rem;
+            }
+        }
+
+        
+    }
+
+
+    
+}
+/*Medial Query to style header ends*/
+
+@media only screen and(max-width:480px){
+    .container {
+        .header {
+            flex-direction: column;
+            padding-bottom: 0;
+            margin: .5rem 1rem;
+
+            .contact {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+
+                svg {
+                    height: 2rem;
+                    width: 2rem;
+                    margin: .5rem;
+                }
+
+
+                .hidden {
+                    display: none;
+                }
+            }
+
+        }
+
+        .col-container .right {
+            margin: 0;
+        }
+
+        .career-obj {
+            margin: 0.5rem 1rem;
+        }
+    }
+    
+}
