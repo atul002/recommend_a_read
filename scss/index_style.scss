@@ -81,7 +81,7 @@ html {
                     }
 
                     a:hover {
-                        border-bottom: .3rem solid #0000003b;                        ;
+                        border-bottom: .3rem solid #94b6c778;                        ;
                         transition: .2s;
                     }
                     
@@ -266,8 +266,8 @@ html {
 
 
 
-    /*Styling Quote Container starts*/
-    .quote-container {
+    /*Styling Book Container starts*/
+    .book-container {
         margin: 2rem .5rem;
         
         h2 {
@@ -277,73 +277,70 @@ html {
             margin: 1rem auto;
         }
 
-        .quotes {
+        .books {
+
+            padding: 1rem;
             display: flex;
-            padding: 1rem .5rem;
+            flex-wrap: wrap;
+            justify-content: center;
 
 
-            .quote-1,
-            .quote-2 {
-                width: 50%;
-                padding: 3rem 1.5rem;
-                border: 1px solid #cecece;
-                border-left: 5px solid #e0b472;
+
+            .book-1,
+            .book-2,
+            .book-3,
+            .book-4 {
+                width: 45%;
+                display: flex;
+                border: 1px solid #ddd;
+                border-radius: .4rem;
                 margin: 1rem;
-                position: relative;
-                box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
-                text-align: center;
 
+                .book-thumbnail {
 
-                .quote-left svg,
-                .quote-right svg {
-                    max-height: 3rem;
-                    max-width: 3rem;
+                    display: flex;
+                    img {
+                        max-width: 100px;
+                        max-height: 200px;
+                    }
+                    
                 }
 
-                .quote-left {
-                    position: absolute;
-                    left: 0.5rem;
-                    top: 0;
-                }
+                .book-description {
+                    .book-title {
+                        h3 {
+                            color: $text_color1;
+                            font-size: 1.5rem;
+                            padding: .5rem 1rem;
+                        }
+                    }
 
-                .quote-right {
-                    position: absolute;
-                    right: 0.5rem;
-                    top: 0;
-                }
+                    .book-author {
+                        h4 {
+                            color: $text_color1;
+                            font-size: 1.1rem;
+                            padding: 0 1rem;
+                        }
+                    }
 
-                .actual-quote {
-                    color: $text_color1;
-                    font-size: 1.2rem;
-                    padding: .5rem 0 1rem 0;
-                    font-style: italic;
-                    font-weight: bold;
-                }
+                    .book-summary {
+                        padding: 1rem;
 
-                .author {
-                    font-size: .9rem;
-                    padding: .5rem 0;
+                    }
                 }
-
             }
 
             
-            .quote-1:hover,
-            .quote-2:hover {
-                border-left: 5px solid #5ca1c3a6;
-                transition: .5s linear;
-            }
-            
-
-            
-
 
         }
+        
+
+        
 
 
     }
 
-    /*Styling Quote Container Ends*/
+    /*Styling Book Container Ends*/
 
 
 }
@@ -455,16 +452,23 @@ footer {
         }
         /*Styling category-container ends*/
 
-        .quote-container {
-            .quotes {
-                flex-wrap: wrap;
-                    .quote-1,
-                    .quote-2 {
-                        width: 100%;
-                        padding: 2rem .5rem;
-                    }
+        /*Styling Book Container starts*/
+
+        .book-container {
+            .books {
+                .book-1,
+                .book-2,
+                .book-3,
+                .book-4 {
+                    width: 100%;
+                    border: none;
+                    border-top: 1px solid #ddd;
+                }
+
+
             }
         }
+        /*Styling Book Container ends*/
     }
     /*Styling body-container ends*/
 
