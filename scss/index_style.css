@@ -73,7 +73,7 @@ html {
   padding: 1rem;
 }
 .body-container header nav ul li a:hover {
-  border-bottom: 0.3rem solid #0000003b;
+  border-bottom: 0.3rem solid #94b6c778;
   transition: 0.2s;
 }
 .body-container .main-container {
