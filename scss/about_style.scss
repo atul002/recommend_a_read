@@ -1,0 +1,64 @@
+/*Homepage stylesheet*/
+
+@import "color_schema";
+
+@mixin box_shadow {
+    box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
+}
+/*Setting root element font-size*/
+@import "basic_style";
+
+/*Styling body-container starts*/
+.body-container {
+    max-width: 980px;
+    margin: auto;
+    
+    @import "header_style";
+
+    .about-container {
+        margin: 1rem 0;
+        padding: 1rem;
+
+        h1 {
+            font-size: 1.8rem;
+            color: $text_color1;
+            text-align: center;
+            
+        }
+
+        .project-description {
+
+            h2 {
+                font-size: 1.5rem;
+                color: $text_color1;
+            }
+            
+            p {
+                padding: 1rem 0;
+    
+            }
+
+        }
+      
+    }
+}
+
+
+
+@import "footer_style";
+
+@media only screen and (max-width: 720px) {
+    .body-container {
+        .about-container {
+
+            h1 {
+                font-size: 1.5rem;
+            }
+            .project-description {
+                h2 {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}

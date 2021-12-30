@@ -1,0 +1,13 @@
+/*Setting root element font-size*/
+html {
+    font-size: 14px;
+}
+
+/*setting-up basic global properties*/
+* {
+    margin: 0;
+    padding: 0;
+    color: $text_color2;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;    
+}

@@ -1,28 +1,14 @@
 /*Homepage stylesheet*/
 
-/*Declaring Variables*/
-$text_color1 : #333330;
-$text_color2 : #626260;
-$text_color3: #f5f5f5;
-$border_color1: #94b6c778;
-$border_color2: #f9715b52;
-$border_color3: #ddd;
+@import "color_schema";
+
 @mixin box_shadow {
     box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
 }
-/*Setting root element font-size*/
-html {
-    font-size: 14px;
-}
+
 
 /*setting-up basic global properties*/
-* {
-    margin: 0;
-    padding: 0;
-    color: $text_color2;
-    font-family: 'Ubuntu', sans-serif;
-    box-sizing: border-box;    
-}
+@import "basic_style";
 
 
 /*Styling body-container starts*/
@@ -30,76 +16,7 @@ html {
     max-width: 980px;
     margin: auto;
 
-    /*Styling Header starts*/
-    header {
-        padding-bottom: .5rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        @include box_shadow;
-
-        /*Styling logo starts*/
-        .logo {
-            width: 50%;
-            
-            img{
-                max-width: 20rem;
-                max-height: 10rem;
-
-            }
-        }
-        /*Styling logo ends*/
-        
-        /*Styling Navigation starts*/
-        nav {
-            width: 50%;
-            padding: 0 .5rem;
-
-            ul {
-                display: flex;
-                justify-content: flex-end;
-                
-                .nav-button {
-                    @include box_shadow;
-                }
-
-                .nav-bt-1 {
-                    border: 1px solid $border_color1;
-                }
-
-                .nav-bt-2 {
-                    border: 1px solid $border_color2;
-                }
-
-                li {
-                    padding: .5rem;
-                    margin: .5rem;
-                    list-style: none;
-
-
-                    a {
-                        text-decoration: none;
-                        font-size: 1.3rem; 
-                        padding: 1rem;                    
-
-                       
-                    }
-
-                    a:hover {
-                        border-bottom: .3rem solid $border_color1;                        ;
-                        transition: .2s;
-                    }
-                    
-
-                }
-
-                
-              
-            }
-        }
-        /*Styling Navigation ends*/
-    }
-    /*Styling Header ends*/
+    @import "header_style";
 
     /*Styling main-container starts*/
     .main-container {
@@ -354,58 +271,13 @@ html {
 @import "footer_style";
 /*Importing Footer Stylesheet Ends*/
 
+
 /*Media Query for Mobile-Responsiveness*/
 @media only screen and (max-width: 720px) {
     
     /*Styling body-container starts*/
     .body-container {
         max-width: 100%;
-
-        /*Styling header starts*/
-        header {
-            flex-wrap: wrap;
-            justify-content: center;
-            align-content: center;
-            
-            /*Styling logo starts*/
-            .logo {
-                width: 100%;
-                text-align: center;
-
-                img {
-                    max-width: 12rem;
-                    max-height: 7rem;
-
-                }
-            }
-            /*Styling logo ends*/
-
-            /*Styling navigation starts*/
-            nav {
-                width: 100%;
-                ul {
-                    justify-content: center;
-
-                    .nav-button {
-                        border: none;
-                        box-shadow: none;
-                    }
-
-                    li {
-                        padding: 0;
-                        margin: 0;
-
-                        a {
-                            font-size: .9rem;
-                            padding: .5rem;
-                        }
-                    }
-                }
-            }
-            /*Styling navigation ends*/
-        }
-        /*Styling header ends*/
-
 
         /*Styling category-container start*/
         .category-container {

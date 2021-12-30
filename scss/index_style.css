@@ -1,5 +1,5 @@
 /*Homepage stylesheet*/
-/*Declaring Variables*/
+/*setting-up basic global properties*/
 /*Setting root element font-size*/
 html {
   font-size: 14px;
@@ -20,6 +20,7 @@ html {
   margin: auto;
   /*Styling Header starts*/
   /*Styling Header ends*/
+  /*Media Query for Mobile-Responsiveness*/
   /*Styling main-container starts*/
   /*Styling main-container ends*/
   /*Styling Category-container starts*/
@@ -75,6 +76,44 @@ html {
 .body-container header nav ul li a:hover {
   border-bottom: 0.3rem solid #94b6c778;
   transition: 0.2s;
+}
+@media only screen and (max-width: 720px) {
+  
+  .body-container header {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    /*Styling logo starts*/
+    /*Styling logo ends*/
+    /*Styling navigation starts*/
+    /*Styling navigation ends*/
+  }
+  .body-container header .logo {
+    width: 100%;
+    text-align: center;
+  }
+  .body-container header .logo img {
+    max-width: 12rem;
+    max-height: 7rem;
+  }
+  .body-container header nav {
+    width: 100%;
+  }
+  .body-container header nav ul {
+    justify-content: center;
+  }
+  .body-container header nav ul .nav-button {
+    border: none;
+    box-shadow: none;
+  }
+  .body-container header nav ul li {
+    padding: 0;
+    margin: 0;
+  }
+  .body-container header nav ul li a {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
 }
 .body-container .main-container {
   padding: 1.5rem 1rem;
@@ -265,7 +304,6 @@ html {
 
 /*Styling body-container ends*/
 /*Importing Footer Stylesheet Starts*/
-/*Declaring Variables*/
 /*Styling Footer Starts*/
 footer {
   background-color: #333330;
@@ -302,47 +340,10 @@ footer p {
   /*Styling body-container starts*/
   .body-container {
     max-width: 100%;
-    /*Styling header starts*/
-    /*Styling header ends*/
     /*Styling category-container start*/
     /*Styling category-container ends*/
     /*Styling Book Container starts*/
     /*Styling Book Container ends*/
-  }
-  .body-container header {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    /*Styling logo starts*/
-    /*Styling logo ends*/
-    /*Styling navigation starts*/
-    /*Styling navigation ends*/
-  }
-  .body-container header .logo {
-    width: 100%;
-    text-align: center;
-  }
-  .body-container header .logo img {
-    max-width: 12rem;
-    max-height: 7rem;
-  }
-  .body-container header nav {
-    width: 100%;
-  }
-  .body-container header nav ul {
-    justify-content: center;
-  }
-  .body-container header nav ul .nav-button {
-    border: none;
-    box-shadow: none;
-  }
-  .body-container header nav ul li {
-    padding: 0;
-    margin: 0;
-  }
-  .body-container header nav ul li a {
-    font-size: 0.9rem;
-    padding: 0.5rem;
   }
   .body-container .category-container .categories .cat {
     width: 40%;

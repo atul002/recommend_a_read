@@ -1,0 +1,125 @@
+/*Homepage stylesheet*/
+/*Setting root element font-size*/
+/*Setting root element font-size*/
+html {
+  font-size: 14px;
+}
+
+/*setting-up basic global properties*/
+* {
+  margin: 0;
+  padding: 0;
+  color: #626260;
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+}
+
+/*Styling body-container starts*/
+.body-container {
+  display: flex;
+  padding: 2rem;
+}
+.body-container .form-container {
+  margin: 2rem auto;
+  border: 2px solid #f5f5f5;
+  box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
+  padding: 2rem;
+}
+.body-container .form-container .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.body-container .form-container .logo h1 {
+  font-size: 1rem;
+  color: #333330;
+  border-left: 2px solid #94b6c778;
+  padding: 0.5rem;
+}
+.body-container .form-container .logo img {
+  max-width: 6rem;
+  max-height: 6rem;
+}
+.body-container .form-container .login-container .email,
+.body-container .form-container .login-container .password {
+  margin: 1rem;
+}
+.body-container .form-container .login-container .email label,
+.body-container .form-container .login-container .password label {
+  color: #333330;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.body-container .form-container .login-container .email input[type=email],
+.body-container .form-container .login-container .email input[type=password],
+.body-container .form-container .login-container .password input[type=email],
+.body-container .form-container .login-container .password input[type=password] {
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #94b6c778;
+  width: 100%;
+  box-sizing: border-box;
+}
+.body-container .form-container button {
+  padding: 0.5rem 1rem;
+  color: #626260;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 1rem;
+}
+.body-container .form-container button:hover {
+  background-color: #069606;
+  color: #f5f5f5;
+}
+.body-container .form-container .forgot-password {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/*Styling Footer Starts*/
+footer {
+  background-color: #333330;
+  padding: 1rem;
+}
+footer .footer-nav {
+  padding: 1rem;
+}
+footer .footer-nav ul {
+  display: flex;
+  justify-content: center;
+}
+footer .footer-nav ul li {
+  list-style: none;
+}
+footer .footer-nav ul li a {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #f5f5f5;
+}
+footer .footer-nav ul li a:hover {
+  border-bottom: 2px solid #626260;
+}
+footer p {
+  color: #f5f5f5;
+  padding: 1rem;
+  text-align: center;
+}
+
+/*Styling Footer Ends*/
+@media only screen and (max-width: 480px) {
+  .body-container {
+    padding: 1rem;
+  }
+  .body-container .form-container {
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  .body-container .form-container .logo img {
+    max-width: 5rem;
+    max-height: 5rem;
+  }
+}
+
+/*# sourceMappingURL=login_style.css.map */
