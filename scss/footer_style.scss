@@ -1,0 +1,48 @@
+
+/*Declaring Variables*/
+$text_color1 : #333330;
+$text_color2 : #626260;
+$text_color3: #f5f5f5;
+$border_color1: #94b6c778; 
+$border_color2: #f9715b52;
+$border_color3: #ddd;
+
+
+/*Styling Footer Starts*/
+footer {
+    background-color: $text_color1;
+    padding: 1rem;
+
+    .footer-nav {
+        padding: 1rem;
+
+        ul {
+            display: flex;
+            justify-content: center;
+
+            li {
+                list-style: none;
+                
+                a {
+                    padding: .5rem;
+                    text-decoration: none;
+                    color: $text_color3;
+                    
+                }
+
+                a:hover {
+                border-bottom: 2px solid $text_color2;
+            }
+            }
+
+            
+        }
+    }
+
+    p {
+        color: $text_color3;
+        padding: 1rem;
+        text-align: center;
+    }
+}
+/*Styling Footer Ends*/
