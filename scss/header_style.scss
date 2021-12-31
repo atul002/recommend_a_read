@@ -4,7 +4,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include box_shadow;
+    @include box_shadow1;
 
     /*Styling logo starts*/
     .logo {
@@ -28,7 +28,7 @@ header {
             justify-content: flex-end;
             
             .nav-button {
-                @include box_shadow;
+                @include box_shadow1;
             }
 
             .nav-bt-1 {

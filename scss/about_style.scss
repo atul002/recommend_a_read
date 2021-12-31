@@ -2,7 +2,7 @@
 
 @import "color_schema";
 
-@mixin box_shadow {
+@mixin box_shadow1 {
     box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
 }
 /*Setting root element font-size*/
@@ -34,8 +34,9 @@
             }
             
             p {
-                padding: 1rem 0;
-    
+                margin: 1rem 1rem 2rem 1rem;
+                border-left: 2px solid $border_color1;
+                padding-left: .5rem;
             }
 
         }

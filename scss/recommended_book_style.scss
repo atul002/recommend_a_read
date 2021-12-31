@@ -1,0 +1,317 @@
+/*Homepage stylesheet*/
+
+@import "color_schema";
+
+
+@mixin box_shadow1 {
+    box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;    
+}
+@mixin box_shadow2 {
+    box-shadow: 0 12px 12px rgb(0 0 0 / 15%);
+}
+
+
+/*Setting root element font-size*/
+@import "basic_style";
+/*Styling body-container starts*/
+
+
+.body-container {
+    max-width: 980px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+    @import "header_style";
+
+    .book-container-wrapper {
+    
+        .book-container {
+            .book-searched {
+                padding: 1rem;
+                display: flex;
+                margin: -10rem auto 1.5rem auto;
+                background-color: white;
+                max-width: 600px;
+                @include box_shadow2;
+
+                .book-thumbnail {
+                    img {
+                        max-height: 200px;
+                        max-width: 125px;
+                    }
+                }
+
+                .book-data {
+                    padding: 0 1rem;
+
+                    .book-title {
+                        h1 {
+                            color: $text_color1;
+                            font-size: 1.7rem;
+                        }
+                    }
+
+                    .book-author {
+                        h2 {
+                            color: $text_color1;
+                            font-size: 1.3rem;
+                        }
+
+                        h2::before {
+                            content: "~";
+                        }
+                    }
+
+                    .book-summary {
+                        
+                        margin: .5rem 0;
+                        p {
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 5;
+                            -webkit-box-orient: vertical;
+                        }
+                    }
+                        
+                   
+                    .book-tags {
+                        display: flex;
+                        align-items: center;
+                        h2 {
+                            font-size: 1.1rem;
+                            padding: 1rem 0;
+                        }
+
+                        ul {
+                            display: flex;
+                            
+                            li {
+                                list-style: none;
+                                margin: 0 .5rem;
+
+                                a {
+                                    text-decoration: none;
+                                    padding: .5rem;
+                                    background-color: $text_color3;    
+                                    border-radius: .5rem;                               
+                                }
+                            }
+                        }
+                    }
+
+                   
+                }
+            }
+
+            .recommended-books-wrapper {
+                padding: 1rem;
+              
+                h2, h3 {
+                    color: $text_color1;
+                    text-align: center;                    
+                }
+
+                h2{
+                    font-size: 1.4rem;
+
+                }
+
+                
+
+                h3 {
+                    margin-bottom: 2rem;
+                }
+                
+                .recommended-books {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .recommended-book-1,
+                    .recommended-book-2,
+                    .recommended-book-3,
+                    .recommended-book-4 {
+                        width: 45%;
+                        margin: 1rem;
+                        display: flex;
+                        border: 1px solid $border_color1;
+                        border-radius: 5px;
+                        @include box_shadow1;
+                        
+                        .thumb {
+                            padding: 1rem;
+
+                            img {
+                                max-height: 150px;
+                                max-width: 100px;
+                            }
+                        }
+
+                        .data {
+                            padding: 1rem .5rem;
+
+                            .title h2 {
+                                text-align: left;
+                            }
+
+                            .author {
+                                h3 {
+                                    text-align: left;
+                                    margin-bottom: .5rem;
+                                }
+
+                                h3::before{
+                                    content: "~";
+                                }
+                            }
+
+                            .summary {
+                            
+                                margin: .5rem 0;
+                                p {
+                                    overflow: hidden;
+                                    display: -webkit-box;
+                                    -webkit-line-clamp: 5;
+                                    -webkit-box-orient: vertical;
+                                }
+                            }
+                        }
+
+
+                    }
+                }
+                
+            }
+
+
+        }
+    }
+
+    .book-container-wrapper::before {
+        content: " ";
+        display: block;
+        height: 200px;
+        width: 100%;
+        background-image: url(../images/bg_dot1.png);
+        background-repeat: repeat;
+
+    }
+
+          
+}
+
+
+
+@import "footer_style";
+
+@media only screen and (max-width: 600px) {
+
+    .body-container {
+        .book-container-wrapper {
+            .book-container {
+                .book-searched {
+                    margin: -12rem auto 1.5rem auto;
+                    max-width: 90%;
+
+                    .book-thumbnail {
+                        img {
+                            max-width: 100px;
+                            max-height: 150px;
+                        }
+                    }
+
+                    
+                }
+
+                .recommended-books-wrapper {
+                    margin: 1rem;
+                    .recommended-books {
+                        display: block;
+
+                        .recommended-book-1,
+                        .recommended-book-2,
+                        .recommended-book-3,
+                        .recommended-book-4 {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 480px) {
+
+    .body-container {
+        .book-container-wrapper {
+            .book-container {
+                .book-searched {
+                    
+                    max-width: 100%;
+
+                    .book-thumbnail {
+                        img {
+                            max-width: 100px;
+                            max-height: 150px;
+                        }
+                    }
+
+                    .book-data {
+                        .book-title {
+                            h1 {
+                                font-size: 1.4rem;
+                            }
+                        }
+
+                        .book-author {
+                            h2 {
+                                font-size: 1.2rem;
+                            }
+                        }
+
+                        .book-tags {
+
+                            align-items: flex-start;
+                            flex-direction: column;
+                            h2 {
+                                font-size: 1.1rem;
+                                padding: .5rem 0 0 0;
+                            }
+
+                            ul {
+                                flex-direction: column;
+
+                                li {
+                                    margin: .5rem 0 0 0;
+                                    padding: .5rem 0;
+                                    border-radius: 0.2rem;
+                                   
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .recommended-books-wrapper {
+                    margin: 0;
+                    padding: 1rem .5rem;
+
+                    .recommended-books {
+                        .recommended-book-1,
+                        .recommended-book-2,
+                        .recommended-book-3,
+                        .recommended-book-4 {
+                            margin: 1rem 0;
+                        }
+                    }
+                    
+                }
+            }
+
+            
+        }
+    }
+    
+}

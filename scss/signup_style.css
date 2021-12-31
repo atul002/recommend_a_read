@@ -144,18 +144,25 @@ html {
   max-height: 6rem;
   margin: -5rem auto 1rem auto;
 }
+.body-container .form-container-wrapper .form-container .login-container .name,
 .body-container .form-container-wrapper .form-container .login-container .email,
 .body-container .form-container-wrapper .form-container .login-container .password {
   margin: 1rem;
 }
+.body-container .form-container-wrapper .form-container .login-container .name label,
 .body-container .form-container-wrapper .form-container .login-container .email label,
 .body-container .form-container-wrapper .form-container .login-container .password label {
   color: #333330;
   font-size: 0.9rem;
   font-weight: bold;
 }
+.body-container .form-container-wrapper .form-container .login-container .name input[type=text],
+.body-container .form-container-wrapper .form-container .login-container .name input[type=email],
+.body-container .form-container-wrapper .form-container .login-container .name input[type=password],
+.body-container .form-container-wrapper .form-container .login-container .email input[type=text],
 .body-container .form-container-wrapper .form-container .login-container .email input[type=email],
 .body-container .form-container-wrapper .form-container .login-container .email input[type=password],
+.body-container .form-container-wrapper .form-container .login-container .password input[type=text],
 .body-container .form-container-wrapper .form-container .login-container .password input[type=email],
 .body-container .form-container-wrapper .form-container .login-container .password input[type=password] {
   outline: none;
@@ -171,6 +178,9 @@ html {
   border: none;
   box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
   margin: 1rem;
+}
+.body-container .form-container-wrapper .form-container .reset:hover {
+  background-color: #f54949;
 }
 .body-container .form-container-wrapper .form-container button:hover {
   background-color: #50e750;
@@ -231,4 +241,4 @@ footer p {
   }
 }
 
-/*# sourceMappingURL=login_style.css.map */
+/*# sourceMappingURL=signup_style.css.map */

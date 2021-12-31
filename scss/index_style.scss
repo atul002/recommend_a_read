@@ -2,7 +2,7 @@
 
 @import "color_schema";
 
-@mixin box_shadow {
+@mixin box_shadow1 {
     box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
 }
 
@@ -52,7 +52,7 @@
                     border: none;
                     border-bottom-left-radius: .5rem;
                     padding: 1rem;
-                    @include box_shadow;                  
+                    @include box_shadow1;                  
                 }
 
                 input[type=text]:focus {
@@ -63,7 +63,7 @@
                     border: none;
                     background-color: transparent;
                     padding: .5rem;
-                    @include box_shadow;
+                    @include box_shadow1;
                 }
             }
             .bg-table {
@@ -223,6 +223,7 @@
                     img {
                         max-width: 100px;
                         max-height: 150px;
+                        margin: 1rem;
                     }
                     
                 }
@@ -232,7 +233,7 @@
                         h3 {
                             color: $text_color1;
                             font-size: 1.5rem;
-                            padding: .5rem 1rem;
+                            padding: 1rem 1rem .5rem 1rem;
                         }
                     }
 

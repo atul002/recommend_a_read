@@ -7,10 +7,10 @@
         
         <meta name="robots" content="index, follow" />
 
-		<title>Login - Recommend a Read</title>
+		<title>Signup - Recommend a Read</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="../scss/login_style.css">
+		<link rel="stylesheet" type="text/css" href="../scss/signup_style.css">
         <meta name="google-site-verification" content="f2iudIu3ktnRaa4QwzztgpmES95bW55eNCZVWrGzT3s" />
 
         <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
@@ -45,23 +45,30 @@
             <nav>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li class="nav-button nav-bt-2"><a href="signup.html">Signup</a></li>
+                    <li class="nav-button nav-bt-1"><a href="login.html">Login</a></li>
                 </ul>
             </nav>
         </header>
 
         <div class="form-container-wrapper">
 
+        
             <div class="form-container">
 
                     <div class="form-logo">
-                        <img src="../images/login-logo.png" alt="Login Page Logo">
+                        <img src="../images/login-logo.png" alt="Signup Page Logo">
 
-                        <h1>Enter Credentials to login!</h1>
+                        <h1>Enter Credentials to Signup!</h1>
                     </div>
                     
                     <form action="../Login" method="post">                  
                         <div class="login-container">
+
+                            <div class="name">
+                                <label>Name:
+                                    <input type="text" placeholder="Atul Singh" name="name" required>
+                                </label>
+                            </div>
 
                             <div class="email">
                                 <label>Email:
@@ -71,22 +78,28 @@
                             
                             <div class="password">
                                 <label>Password:
-                                    <input type="password" placeholder="********" name="password" required>
+                                    <input type="password" placeholder="********" name="password1" required>
+                                </label>
+                            </div>
+
+                            <div class="password">
+                                <label>Password:
+                                    <input type="password" placeholder="********" name="password2" required>
                                 </label>
                             </div>
 
                         </div>
                         
                         
-                        <button type="submit">Login</button>
-                        <div class="forgot-password">
-                            <a href="../jsp/forgot_password.html">Forgot  password?</a>
-                        </div>
+                        <button type="submit">Signup</button>
+                        <button class="reset" type="reset">Clear All</button>
+                        
 
                         
                     </form>
             </div>
         </div>
+
         
     </div>
     <!--body Container ends-->
@@ -98,7 +111,7 @@
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="signup.html">Signup</a></li>
+                <li><a href="login.html">Login</a></li>
             </ul>
         </div>
 

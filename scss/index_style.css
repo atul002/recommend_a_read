@@ -78,7 +78,10 @@ html {
   transition: 0.2s;
 }
 @media only screen and (max-width: 720px) {
-  
+  .body-container {
+    /*Styling header starts*/
+    /*Styling header ends*/
+  }
   .body-container header {
     flex-wrap: wrap;
     justify-content: center;
@@ -278,6 +281,7 @@ html {
 .body-container .book-container .books .book-4 .book-thumbnail img {
   max-width: 100px;
   max-height: 150px;
+  margin: 1rem;
 }
 .body-container .book-container .books .book-1 .book-description .book-title h3,
 .body-container .book-container .books .book-2 .book-description .book-title h3,
@@ -285,7 +289,7 @@ html {
 .body-container .book-container .books .book-4 .book-description .book-title h3 {
   color: #333330;
   font-size: 1.5rem;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem 0.5rem 1rem;
 }
 .body-container .book-container .books .book-1 .book-description .book-author h4,
 .body-container .book-container .books .book-2 .book-description .book-author h4,
