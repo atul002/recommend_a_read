@@ -1,0 +1,28 @@
+@import "color_schema";
+
+/*Setting root element font-size*/
+@import "basic_style";
+
+@mixin box_shadow1 {
+    box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
+}
+
+@import "header_style";
+@import "footer_style";
+
+/*Styling body-container starts*/
+.body-container {
+    max-width: 980px;
+    margin: auto;
+
+    .error-image {
+        margin: 1rem auto;
+        text-align: center;
+        max-width: 75%;
+        
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
