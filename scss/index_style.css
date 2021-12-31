@@ -269,12 +269,6 @@ html {
   border-radius: 0.4rem;
   margin: 1rem;
 }
-.body-container .book-container .books .book-1 .book-thumbnail,
-.body-container .book-container .books .book-2 .book-thumbnail,
-.body-container .book-container .books .book-3 .book-thumbnail,
-.body-container .book-container .books .book-4 .book-thumbnail {
-  display: flex;
-}
 .body-container .book-container .books .book-1 .book-thumbnail img,
 .body-container .book-container .books .book-2 .book-thumbnail img,
 .body-container .book-container .books .book-3 .book-thumbnail img,
@@ -289,7 +283,7 @@ html {
 .body-container .book-container .books .book-4 .book-description .book-title h3 {
   color: #333330;
   font-size: 1.5rem;
-  padding: 1rem 1rem 0.5rem 1rem;
+  padding: 1rem 1rem 0.5rem 0;
 }
 .body-container .book-container .books .book-1 .book-description .book-author h4,
 .body-container .book-container .books .book-2 .book-description .book-author h4,
@@ -297,13 +291,28 @@ html {
 .body-container .book-container .books .book-4 .book-description .book-author h4 {
   color: #333330;
   font-size: 1.1rem;
-  padding: 0 1rem;
+  padding: 0 1rem 0 0;
+}
+.body-container .book-container .books .book-1 .book-description .book-author h4::before,
+.body-container .book-container .books .book-2 .book-description .book-author h4::before,
+.body-container .book-container .books .book-3 .book-description .book-author h4::before,
+.body-container .book-container .books .book-4 .book-description .book-author h4::before {
+  content: "~";
 }
 .body-container .book-container .books .book-1 .book-description .book-summary,
 .body-container .book-container .books .book-2 .book-description .book-summary,
 .body-container .book-container .books .book-3 .book-description .book-summary,
 .body-container .book-container .books .book-4 .book-description .book-summary {
-  padding: 1rem;
+  margin: 0.5rem 0;
+}
+.body-container .book-container .books .book-1 .book-description .book-summary p,
+.body-container .book-container .books .book-2 .book-description .book-summary p,
+.body-container .book-container .books .book-3 .book-description .book-summary p,
+.body-container .book-container .books .book-4 .book-description .book-summary p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
 }
 
 /*Styling body-container ends*/
@@ -355,6 +364,12 @@ footer p {
     margin: 0.5rem;
     height: 8rem;
   }
+  .body-container .book-container {
+    margin: 2rem 0;
+  }
+  .body-container .book-container .books {
+    padding: 1rem 0;
+  }
   .body-container .book-container .books .book-1,
 .body-container .book-container .books .book-2,
 .body-container .book-container .books .book-3,
@@ -362,7 +377,14 @@ footer p {
     margin: 1rem 0.5rem;
     width: 100%;
     border: none;
+    border-radius: 0;
     border-top: 1px solid #ddd;
+  }
+  .body-container .book-container .books .book-1 .book-thumbnail img,
+.body-container .book-container .books .book-2 .book-thumbnail img,
+.body-container .book-container .books .book-3 .book-thumbnail img,
+.body-container .book-container .books .book-4 .book-thumbnail img {
+    margin: 1rem 1rem 1rem 0;
   }
 
   /*Styling body-container ends*/
