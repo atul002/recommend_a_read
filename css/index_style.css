@@ -1,0 +1,399 @@
+/*Importing Basic Stylesheet*/
+/*Setting up basic styling for all elements*/
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.945);
+}
+
+/*font-family: 'Courgette', cursive;*/
+/*font-family: 'Kaushan Script', cursive;*/
+/*font-family: 'Itim', cursive;*/
+/*font-family: 'Spline Sans', sans-serif;*/
+/*font-family: 'Ubuntu', sans-serif;*/
+/*Importing Color Schema*/
+/*Defining Basic Color Schema*/
+/*Importing Stylesheet for header*/
+/*Styling Header*/
+body .container header {
+  display: flex;
+  padding: 0 1rem;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
+}
+body .container header .logo {
+  max-width: 50%;
+}
+body .container header .logo a {
+  display: block;
+}
+body .container header .logo a img {
+  max-width: 16rem;
+  vertical-align: middle;
+}
+body .container header nav {
+  max-width: 50%;
+}
+body .container header nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+body .container header nav ul .nav-button {
+  list-style: none;
+  border: 1px solid;
+  margin-right: 0.5rem;
+  box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
+}
+body .container header nav ul .nav-button a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.685);
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+body .container header nav ul .nav-bt-1 {
+  border-color: #72b7da78;
+}
+body .container header nav ul .nav-bt-1 :hover {
+  background-color: #14a1e7;
+  color: rgba(0, 0, 0, 0.788);
+}
+body .container header nav ul .nav-bt-2 {
+  border-color: #f9715b52;
+}
+body .container header nav ul .nav-bt-2 :hover {
+  background-color: #f56e58;
+  color: rgba(0, 0, 0, 0.788);
+}
+
+@media only screen and (max-width: 600px) {
+  body .container header {
+    padding: 0;
+  }
+  body .container header .logo a img {
+    max-width: 10rem;
+  }
+  body .container header nav ul .nav-button a {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+/*Importing Stylesheet for Footer*/
+/*Defining Basic Color Schema*/
+/*Styling Footer Starts*/
+footer {
+  background-color: #333330;
+  padding: 1rem;
+}
+footer .footer-nav {
+  padding: 1rem;
+}
+footer .footer-nav ul {
+  display: flex;
+  justify-content: center;
+}
+footer .footer-nav ul li {
+  list-style: none;
+}
+footer .footer-nav ul li a {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: whitesmoke;
+}
+footer .footer-nav ul li a:hover {
+  background-color: #333330;
+  border: 1px solid #5f5a5a65;
+  border-radius: 0.5rem;
+}
+footer p {
+  color: whitesmoke;
+  padding: 1rem;
+  text-align: center;
+}
+
+/*Styling Footer Ends*/
+/*Defining box shadows*/
+/*Body Styling starts*/
+body {
+  /*Middle Content Wrapper styling starts*/
+  /*Middle Conten Wrapper Styling ends*/
+  /*Category Styling Starts*/
+  /*Category Styling ends*/
+  /*Book Styling Starts*/
+  /*Book Styling Ends*/
+}
+body .middle-content-wrapper .search-content-wrapper h1 {
+  padding: 1rem 0;
+  text-align: center;
+  margin: 2rem auto 0.5rem auto;
+  font-size: 1.8rem;
+}
+body .middle-content-wrapper .search-content-wrapper p {
+  color: rgba(0, 0, 0, 0.685);
+  text-align: center;
+  max-width: 80ch;
+  margin: 0 auto;
+  padding: 0 2rem 2rem 2rem;
+}
+body .middle-content-wrapper .search-content-wrapper .search-content {
+  margin: 1rem;
+  text-align: center;
+}
+body .middle-content-wrapper .search-content-wrapper .search-content form {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+body .middle-content-wrapper .search-content-wrapper .search-content form input[type=text],
+body .middle-content-wrapper .search-content-wrapper .search-content form input[type=submit] {
+  outline: none;
+  border: 1px solid #5f5a5a65;
+  padding: 1rem;
+  font-size: 1rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+body .middle-content-wrapper .search-content-wrapper .search-content form input[type=text] {
+  width: 60%;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+body .middle-content-wrapper .search-content-wrapper .search-content form input[type=text]:focus {
+  border-color: #72b7da78;
+}
+body .middle-content-wrapper .search-content-wrapper .search-content form input[type=submit]:hover {
+  cursor: pointer;
+  background-color: #37a02d;
+  color: white;
+  transition: 0.3s;
+}
+body .middle-content-wrapper .search-content-wrapper .search-content img {
+  width: 80%;
+  max-height: 2rem;
+}
+body .category-wrapper h2 {
+  text-align: center;
+  margin-top: 3rem;
+}
+body .category-wrapper .categories {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+body .category-wrapper .categories .cat {
+  width: 25%;
+  margin: 1rem;
+}
+body .category-wrapper .categories .cat a {
+  height: 9rem;
+  border: 1px solid #5f5a5a65;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 0.2rem;
+}
+body .category-wrapper .categories .cat a:hover {
+  color: transparent;
+  border: none;
+}
+body .category-wrapper .categories .cat:hover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s;
+}
+body .category-wrapper .categories .cat-1:hover {
+  background-image: url(../images/science_fiction.png);
+}
+body .category-wrapper .categories .cat-2:hover {
+  background-image: url(../images/adventure.png);
+}
+body .category-wrapper .categories .cat-3:hover {
+  background-image: url(../images/fantasy.png);
+}
+body .category-wrapper .categories .cat-4:hover {
+  background-image: url(../images/time_travel.png);
+}
+body .category-wrapper .categories .cat-5:hover {
+  background-image: url(../images/young_adult.png);
+}
+body .category-wrapper .categories .cat-6:hover {
+  background-image: url(../images/romance.png);
+}
+body .category-wrapper .categories .cat-7:hover {
+  background-image: url(../images/thriller.png);
+}
+body .category-wrapper .categories .cat-8:hover {
+  background-image: url(../images/horror.png);
+}
+body .category-wrapper .categories .cat-9:hover {
+  background-image: url(../images/mystery.png);
+}
+body .category-wrapper .categories .cat-10:hover {
+  background-image: url(../images/drama.png);
+}
+body .category-wrapper .categories .cat-11:hover {
+  background-image: url(../images/biography.png);
+}
+body .category-wrapper .categories .cat-12:hover {
+  background-image: url(../images/non_fiction.png);
+}
+body .featured-books {
+  margin: 2rem auto;
+  padding: 1rem;
+}
+body .featured-books h1 {
+  margin: 2rem auto;
+  text-align: center;
+}
+body .featured-books .books-wrapper {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+body .featured-books .books-wrapper .books {
+  display: flex;
+  margin: 2rem auto;
+}
+body .featured-books .books-wrapper .books .book-thumb img {
+  vertical-align: middle;
+  border-radius: 0 6% 6% 0/4%;
+  max-width: 150px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+body .featured-books .books-wrapper .books .book-description {
+  padding: 0 1rem;
+  margin: 0 1rem;
+}
+body .featured-books .books-wrapper .books .book-description .title h2 {
+  font-family: "Itim", cursive;
+  font-size: 2rem;
+}
+body .featured-books .books-wrapper .books .book-description .author h3 {
+  padding: 0.2rem 0 0.5rem 0;
+  font-family: "Courgette", cursive;
+}
+body .featured-books .books-wrapper .books .book-description .summary {
+  font-family: "Spline Sans", sans-serif;
+}
+body .featured-books .books-wrapper .books .book-description .summary p {
+  color: rgba(0, 0, 0, 0.788);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  max-width: 100ch;
+  font-family: "Spline Sans", sans-serif;
+}
+body .featured-books .books-wrapper .books .book-description .tags {
+  margin: 1rem 0;
+}
+body .featured-books .books-wrapper .books .book-description .tags ul {
+  display: flex;
+}
+body .featured-books .books-wrapper .books .book-description .tags ul li {
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  list-style: none;
+  border: 1px solid #5f5a5a65;
+  border-radius: 1px;
+  background-color: #333330;
+  color: whitesmoke;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*Body Styling ends*/
+/*Styling body for small screen sizes*/
+@media only screen and (max-width: 720px) {
+  body .category-wrapper .categories .cat {
+    width: 40%;
+  }
+  body .featured-books .books-wrapper .books .book-description .tags ul {
+    flex-wrap: wrap;
+  }
+  body .featured-books .books-wrapper .books .book-description .tags ul li {
+    padding: 0.3rem 0.5rem;
+    margin: 0.5rem 0.5rem 0 0;
+  }
+}
+/*Styling body for small screen sizes*/
+@media only screen and (max-width: 600px) {
+  body .middle-content-wrapper .search-content-wrapper h1 {
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 1rem auto;
+  }
+  body .middle-content-wrapper .search-content-wrapper p {
+    padding: 0 1rem;
+  }
+  body .middle-content-wrapper .search-content-wrapper .search-content form input[type=text],
+body .middle-content-wrapper .search-content-wrapper .search-content form input[type=submit] {
+    font-size: revert;
+    padding: 0.5rem;
+  }
+  body .middle-content-wrapper .search-content-wrapper .search-content form input[type=text] {
+    width: 75%;
+  }
+  body .middle-content-wrapper .search-content-wrapper .search-content img {
+    width: 100%;
+  }
+  body .category-wrapper h2 {
+    margin-top: 2rem;
+  }
+  body .category-wrapper .categories {
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
+  body .category-wrapper .categories .cat {
+    margin: 0.5rem;
+    width: 40%;
+  }
+  body .category-wrapper .categories .cat a {
+    height: 6rem;
+  }
+  body .featured-books {
+    margin: 0 auto;
+    padding: 1rem 0.5rem;
+  }
+  body .featured-books h1 {
+    margin: 0;
+    font-size: 1.7rem;
+  }
+  body .featured-books .books-wrapper {
+    padding: 1rem 0.5rem;
+  }
+  body .featured-books .books-wrapper .books {
+    margin: 1rem 0;
+  }
+  body .featured-books .books-wrapper .books .book-thumb img {
+    max-width: 125px;
+  }
+  body .featured-books .books-wrapper .books .book-description {
+    padding: 0;
+  }
+  body .featured-books .books-wrapper .books .book-description .title h2 {
+    font-size: 1.5rem;
+  }
+  body .featured-books .books-wrapper .books .book-description .author h3 {
+    padding: 0.2rem 0 0.3rem 0;
+  }
+  body .featured-books .books-wrapper .books .book-description .tags {
+    margin: 0;
+  }
+  body .featured-books .books-wrapper .books .book-description .tags ul li {
+    font-size: 0.7rem;
+    margin: 0.3rem 0.3rem 0 0;
+  }
+}
+
+/*# sourceMappingURL=index_style.css.map */
