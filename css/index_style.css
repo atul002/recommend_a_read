@@ -63,14 +63,14 @@ body .container header nav ul .nav-bt-1 {
 }
 body .container header nav ul .nav-bt-1 :hover {
   background-color: #14a1e7;
-  color: rgba(0, 0, 0, 0.788);
+  color: whitesmoke;
 }
 body .container header nav ul .nav-bt-2 {
   border-color: #f9715b52;
 }
 body .container header nav ul .nav-bt-2 :hover {
   background-color: #f56e58;
-  color: rgba(0, 0, 0, 0.788);
+  color: whitesmoke;
 }
 
 @media only screen and (max-width: 600px) {
