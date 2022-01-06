@@ -2,9 +2,7 @@
 
 /*Styling Footer Starts*/
 footer {
-
     background-color: $bg_color5;
-    padding: 1rem;
 
     .footer-nav {
         padding: 1rem;
@@ -21,6 +19,8 @@ footer {
                     padding: .5rem;
                     text-decoration: none;
                     color: $text_color4;
+                    font-family: 'Ubuntu', sans-serif;
+
                 }
 
                 a:hover {
