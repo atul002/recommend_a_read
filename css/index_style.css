@@ -330,7 +330,7 @@ body .featured-books .books-wrapper .books .book-description .tags ul li {
 @media only screen and (max-width: 600px) {
   body .middle-content-wrapper .search-content-wrapper h1 {
     font-size: 1.5rem;
-    padding: 0;
+    padding: 0 1rem;
     margin: 1rem auto;
   }
   body .middle-content-wrapper .search-content-wrapper p {
