@@ -39,6 +39,7 @@ body {
     .form-container-wrapper {
         display: flex;
         flex-direction: column;
+        height: 100vh;
 
         .form-container{
             margin: .5rem auto 2rem auto;
@@ -78,8 +79,8 @@ body {
                     
                     margin: 1rem;
                     label {
-                        color: $text_color1;
-                        font-size: .9rem;
+                        color: $text_color3;
+                        font-size: .8rem;
                         font-weight: bold;
                     }
 
@@ -88,13 +89,20 @@ body {
                     input[type="password"] {
                         outline: none;
                         border: none;
-                        font-size: 1.1rem;
-                        border-bottom: 1px solid $border_color1;
+                        font-size: 1rem;
+                        border-bottom: 1px solid $border_color3;
                         width: 100%;
                         box-sizing: border-box;
                     }
 
-
+                    input[type="text"]:hover,
+                    input[type="email"]:hover,
+                    input[type="password"]:hover,
+                    input[type="text"]:focus,
+                    input[type="email"]:focus,
+                    input[type="password"]:focus {
+                        border-color: $border_color1;
+                    }
                     
                 }
 

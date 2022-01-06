@@ -39,7 +39,7 @@ body {
     .form-container-wrapper {
         display: flex;
         flex-direction: column;
-
+        height: 100vh;
         
         .form-container{
             margin: .5rem auto 2rem auto;
@@ -78,8 +78,8 @@ body {
                     
                     margin: 1rem;
                     label {
-                        color: $text_color1;
-                        font-size: .9rem;
+                        color: $text_color3;
+                        font-size: .8rem;
                         font-weight: bold;
                     }
 
@@ -87,14 +87,18 @@ body {
                     input[type="password"] {
                         outline: none;
                         border: none;
-                        font-size: 1.1rem;
-                        border-bottom: 1px solid $border_color1;
+                        font-size: 1rem;
+                        border-bottom: 1px solid $border_color3;
                         width: 100%;
                         box-sizing: border-box;
                     }
 
-
-                    
+                    input[type="email"]:hover,
+                    input[type="email"]:foucs,
+                    input[type="password"]:hover,
+                    input[type="password"]:focus {
+                        border-color: $border_color1;
+                    }
                 }
 
                 
@@ -118,9 +122,23 @@ body {
             }
 
             .forgot-password {
-                padding: 1rem;
-                margin-bottom: 1rem;
+                padding: 1rem;                
+                text-align: center;
+                a {
+                    font-size: .8rem;
+                    padding: .3rem .5rem;
+                    color: $text_color1;    
+                    border: 1px solid $border_color3;
+                    border-radius: 1rem;
+                    @include box_shadow1;
+                    text-decoration: none;
+                }
 
+                a:hover {
+                    background-color: $bg_color2;
+                    color: $text_color4;
+                    border: none;
+                }
             }
         }
 
