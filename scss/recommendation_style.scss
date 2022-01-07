@@ -1,0 +1,341 @@
+/*Importing Basic Stylesheet*/
+@import 'basic_style';
+
+/*Importing Color Schema*/
+@import 'color_schema';
+
+/*Importing Stylesheet for header*/
+@import 'header_style';
+
+/*Importing Stylesheet for Footer*/
+@import 'footer_style';
+
+
+/*Defining box shadows*/
+@mixin box_shadow1 {
+    box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
+}
+
+@mixin box_shadow2 {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+@mixin box_shadow3 {
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 20%)
+    
+}
+
+* {
+    font-family: 'Spline Sans', sans-serif;
+
+}
+
+body {
+    .container {
+        .book-searched-wrapper {
+            .book-container {
+                .book-searched {
+                    margin: -100px auto 2rem auto;
+                    padding: 1rem;
+                    display: flex;
+                    background-color: $bg_color6;
+                    max-width: 720px;
+                    @include box_shadow2;
+
+
+                    .book-thumb {
+                        img {
+                            max-width: 150px;
+                            vertical-align: middle;
+                            @include box_shadow3;
+                            border-radius: 0 6% 6% 0/4%;
+                        }
+                    }
+
+                    .book-data {
+                        padding: 0 1rem;
+                        margin:  0 1rem;
+
+                        .title {
+                            h1 {
+                                font-family: "Itim", cursive;
+                                font-size: 2rem;
+                            }
+                        }
+
+                        .author {
+                            h2 {
+                                padding: 0.2rem 0 0.5rem 0;
+                                font-family: "Courgette", cursive;
+                            }
+                        }
+
+                        .summary {
+                            p {
+                                color: $text_color3;
+                                overflow: hidden;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 5;
+                                -webkit-box-orient: vertical;
+                                max-width: 100ch;
+                                font-family: "Spline Sans", sans-serif;
+                            }
+                        }
+
+                        .tags {
+                            margin: .5rem 0;
+
+                            ul {
+                                display: flex;
+                                flex-wrap: wrap;
+
+                                li {
+                                    margin: .5rem .5rem 0 0;
+                                    list-style: none;
+                                    border: 1px solid $border_color3;
+                                    border-radius: 1px;
+                                    background-color: $bg_color5;
+                                    padding: 0.5rem 1rem;
+                                    @include box_shadow3;
+
+                                        
+                                    a {
+                                        color: $text_color4;
+                                        text-decoration: none;
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                /*Book Styling Starts*/
+                .recommended-books-wrapper {
+                    margin: 2rem auto;
+                    padding: 1rem;
+            
+                    h3 {
+                        margin: 1rem auto;
+                        text-align: center;
+                    }
+            
+                    .recommended-books {
+                        padding: 1rem;
+                        display: flex;
+                        flex-direction: column;
+                        
+                        .books {
+                            display: flex;
+                            margin: 2rem auto;
+                            .book-thumb {
+                                img {
+                                    vertical-align: middle;
+                                    border-radius: 0 6% 6% 0/4%;
+                                    max-width: 150px;
+                                    @include box_shadow3;
+                                }
+                            }
+            
+                            .book-data {
+                                padding: 0 1rem;
+                                margin: 0 1rem;
+            
+                                .title {
+                                    h1 {
+                                        font-family: 'Itim', cursive;
+                                        font-size: 1.7rem;
+                                    }
+                                }
+            
+                                .author {
+                                    h2 {
+                                        padding: .2rem 0 .5rem 0;  
+                                        font-family: 'Courgette', cursive;
+                                    }
+                                }
+            
+                                .summary {
+                                    font-family: 'Spline Sans', sans-serif;
+            
+                                    p {
+                                        color: $text_color3;
+                                        overflow: hidden;
+                                        display: -webkit-box;
+                                        -webkit-line-clamp: 5;
+                                        -webkit-box-orient: vertical;
+                                        max-width: 100ch;
+                                        font-family: 'Spline Sans', sans-serif;
+        
+                                    }
+                                }
+            
+                                .tags {
+                                    margin: .5rem 0;
+            
+                                    ul {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        li {
+                                            padding: .5rem 1rem;
+                                            margin: .5rem .5rem 0 0;
+                                            list-style: none;
+                                            border: 1px solid $border_color3;
+                                            border-radius: 1px;
+                                            background-color: $bg_color5;
+                                            
+                                            @include box_shadow3;
+            
+                                            a {
+                                                text-decoration: none;
+                                                color: $text_color4;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+            
+                        }
+                    }
+                }
+                /*Book Styling Ends*/
+                
+            }
+
+        }
+
+        .book-searched-wrapper::before {
+            content: " ";
+            display: block;
+            height: 200px;
+            width: 100%;
+            background-image: url(../images/bg_dot1.png);
+            background-repeat: repeat;
+        }
+    }
+}
+
+@media only screen and (max-width:720px) {
+
+    body {
+        .container {
+            .book-searched-wrapper {
+                .book-container {
+                    .recommended-books-wrapper {
+                        .recommended-books {
+                            .books {
+                                .book-data {
+                                    .tags {
+                                        ul {
+                                            li {
+                                                padding: .3rem .5rem;
+                                                margin: .5rem .5rem 0 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+
+}
+
+@media only screen and (max-width:600px) {
+    body {
+        .container {
+            .book-searched-wrapper {
+                .book-container {
+                    .book-searched {
+                        margin: -150px .5rem 3rem .5rem;
+                        padding: 1rem 0.5rem;
+
+                        .book-thumb {
+                            img {
+                                max-width: 125px;
+                            }
+                        }
+
+                        .book-data {
+                            padding: 0;
+                            .title {
+                                h1 {
+                                    font-size: 1.7rem;
+                                }
+                            }
+                            .author {
+                                h2 {
+                                    font-size: 1.2rem;
+                                }
+                            }
+
+                            .tags {
+                                margin: 0; 
+                                 ul {
+                                     li {
+                                        font-size: 0.7rem;
+                                        margin: 0.3rem 0.3rem 0 0;
+                                        padding: 0.3rem 0.5rem;
+                                     }
+                                 }
+                            }
+                        }
+                    }
+
+
+                    .recommended-books-wrapper {
+                        margin: 0 auto;
+                        padding: 1rem 0.5rem;
+                        h3 {
+                            margin: 0;
+                        }
+            
+                        .recommended-books {
+                            padding: 1rem 0.5rem;
+            
+                            .books {
+                                margin: 1rem 0;
+                                .book-thumb {
+                                    img {
+                                        max-width: 125px;
+                                    }
+                                }
+            
+                                .book-data {
+                                    padding: 0;
+            
+                                    .title {
+                                        h1 {
+                                            font-size: 1.5rem;
+                                        }
+                                    }
+            
+                                    .author {
+                                        h2 {
+                                            padding: .2rem 0 .3rem 0;
+                                        }
+                                    }
+                                    
+                                    .tags {
+                                        margin: 0;
+                                        ul {
+                                            li {
+                                                font-size: .7rem;
+                                                margin: 0.3rem 0.3rem 0 0;
+                                                padding: 0.3rem 0.5rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
