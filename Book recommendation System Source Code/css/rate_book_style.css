@@ -1,0 +1,353 @@
+/*Importing Basic Stylesheet*/
+/*Setting up basic styling for all elements*/
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.945);
+}
+
+/*font-family: 'Courgette', cursive;*/
+/*font-family: 'Kaushan Script', cursive;*/
+/*font-family: 'Itim', cursive;*/
+/*font-family: 'Spline Sans', sans-serif;*/
+/*font-family: 'Ubuntu', sans-serif;*/
+/*Importing Color Schema*/
+/*Defining Basic Color Schema*/
+/*Importing Stylesheet for header*/
+/*Styling Header*/
+body .container header {
+  display: flex;
+  padding: 0 1rem;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
+}
+body .container header .logo {
+  max-width: 50%;
+}
+body .container header .logo a {
+  display: block;
+}
+body .container header .logo a img {
+  max-width: 16rem;
+  vertical-align: middle;
+}
+body .container header nav {
+  max-width: 50%;
+}
+body .container header nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+body .container header nav ul .nav-button {
+  list-style: none;
+  border: 1px solid;
+  margin-right: 0.5rem;
+  box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
+}
+body .container header nav ul .nav-button a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.685);
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+body .container header nav ul .nav-bt-1 {
+  border-color: #72b7da78;
+}
+body .container header nav ul .nav-bt-1 :hover {
+  background-color: #14a1e7;
+  color: whitesmoke;
+}
+body .container header nav ul .nav-bt-2 {
+  border-color: #f9715b52;
+}
+body .container header nav ul .nav-bt-2 :hover {
+  background-color: #f56e58;
+  color: whitesmoke;
+}
+
+@media only screen and (max-width: 600px) {
+  body .container header {
+    padding: 0;
+  }
+  body .container header .logo a img {
+    max-width: 10rem;
+  }
+  body .container header nav ul .nav-button a {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+/*Importing Stylesheet for Footer*/
+/*Defining Basic Color Schema*/
+/*Styling Footer Starts*/
+footer {
+  background-color: #333330;
+}
+footer .footer-nav {
+  padding: 1rem;
+}
+footer .footer-nav ul {
+  display: flex;
+  justify-content: center;
+}
+footer .footer-nav ul li {
+  list-style: none;
+}
+footer .footer-nav ul li a {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: "Ubuntu", sans-serif;
+}
+footer .footer-nav ul li a:hover {
+  background-color: #333330;
+  border: 1px solid #5f5a5a65;
+  border-radius: 0.5rem;
+}
+footer p {
+  color: whitesmoke;
+  padding: 1rem;
+  text-align: center;
+}
+
+/*Styling Footer Ends*/
+/*Defining box shadows*/
+/*Styling body-container starts*/
+body {
+  width: 100%;
+  margin: auto;
+  color: rgba(0, 0, 0, 0.788);
+}
+body .container .dashboard-container {
+  display: grid;
+  grid-template-areas: "side main main main main main";
+}
+body .container .dashboard-container .sidebar-wrapper {
+  grid-area: side;
+  background-color: #333330;
+}
+body .container .dashboard-container .sidebar-wrapper .sidebar nav ul {
+  padding: 1rem 0;
+}
+body .container .dashboard-container .sidebar-wrapper .sidebar nav ul li {
+  list-style: none;
+  margin: 0.5rem 0 1rem 0;
+}
+body .container .dashboard-container .sidebar-wrapper .sidebar nav ul li a {
+  display: flex;
+  align-items: baseline;
+  text-decoration: none;
+  border: none;
+  color: whitesmoke;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+body .container .dashboard-container .sidebar-wrapper .sidebar nav ul li a .fa {
+  color: whitesmoke;
+  margin: 0.5rem 0.2rem;
+}
+body .container .dashboard-container .sidebar-wrapper .sidebar nav ul li:hover {
+  background-color: #242423;
+}
+body .container .dashboard-container .sidebar-wrapper .sidebar nav ul .active {
+  background-color: #000000;
+}
+body .container .dashboard-container .book-rating-wrapper {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+body .container .dashboard-container .book-rating-wrapper .book-rating {
+  margin: 1rem;
+  text-align: center;
+}
+body .container .dashboard-container .book-rating-wrapper .book-rating form {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+body .container .dashboard-container .book-rating-wrapper .book-rating form input[type=text],
+body .container .dashboard-container .book-rating-wrapper .book-rating form input[type=submit] {
+  outline: none;
+  border: 1px solid #5f5a5a65;
+  padding: 1rem;
+  font-size: 1rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+body .container .dashboard-container .book-rating-wrapper .book-rating form input[type=text] {
+  width: 60%;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+body .container .dashboard-container .book-rating-wrapper .book-rating form input[type=text]:focus {
+  border-color: #72b7da78;
+}
+body .container .dashboard-container .book-rating-wrapper .book-rating form input[type=submit]:hover {
+  cursor: pointer;
+  background-color: #37a02d;
+  color: white;
+  transition: 0.3s;
+}
+body .container .dashboard-container .book-rating-wrapper .book-rating img {
+  width: 80%;
+  max-height: 2rem;
+}
+body .container .dashboard-container .book-rating-wrapper .book-wrapper {
+  padding: 1rem;
+}
+body .container .dashboard-container .book-rating-wrapper .book-wrapper h2 {
+  text-align: center;
+}
+body .container .dashboard-container .book-rating-wrapper .book-wrapper .books {
+  display: flex;
+  margin: 2rem auto;
+}
+body .container .dashboard-container .book-rating-wrapper .book-wrapper .books .book-thumb img {
+  vertical-align: middle;
+  border-radius: 0 6% 6% 0/4%;
+  max-width: 150px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+body .container .dashboard-container .book-rating-wrapper .book-wrapper .books .book-description {
+  padding: 0 1rem;
+  margin: 0 1rem;
+}
+body .container .dashboard-container .book-rating-wrapper .book-wrapper .books .book-description .title h2 {
+  font-family: "Itim", cursive;
+  font-size: 2rem;
+  text-align: left;
+}
+body .container .dashboard-container .book-rating-wrapper .book-wrapper .books .book-description .author h3 {
+  padding: 0.2rem 0 0.5rem 0;
+  font-family: "Courgette", cursive;
+}
+body .container .dashboard-container .book-rating-wrapper .book-wrapper .books .book-description .summary {
+  font-family: "Spline Sans", sans-serif;
+}
+body .container .dashboard-container .book-rating-wrapper .book-wrapper .books .book-description .summary p {
+  color: rgba(0, 0, 0, 0.788);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  max-width: 100ch;
+  font-family: "Spline Sans", sans-serif;
+}
+body .container .dashboard-container .book-rating-wrapper .book-wrapper .books .book-description .tags {
+  margin: 0.5rem 0;
+}
+body .container .dashboard-container .book-rating-wrapper .book-wrapper .books .book-description .tags ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+body .container .dashboard-container .book-rating-wrapper .book-wrapper .books .book-description .tags ul li {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0.5rem 0 0;
+  list-style: none;
+  border: 1px solid #5f5a5a65;
+  border-radius: 1px;
+  background-color: #333330;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+body .container .dashboard-container .book-rating-wrapper .book-wrapper .books .book-description .tags ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+body .container .dashboard-container .book-rating-wrapper .book-wrapper .books .book-description .rating form {
+  padding: 1rem 0;
+}
+body .container .dashboard-container .book-rating-wrapper .book-wrapper .books .book-description .rating form label {
+  font-weight: bold;
+}
+body .container .dashboard-container .book-rating-wrapper .book-wrapper .books .book-description .rating form label select {
+  border: 1px solid #5f5a5a65;
+  padding: 0.5rem;
+}
+body .container .dashboard-container .book-rating-wrapper .book-wrapper .books .book-description .rating form input[type=submit] {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border: 1px solid #5f5a5a65;
+  box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
+  font-weight: bold;
+}
+body .container .dashboard-container .book-rating-wrapper .book-wrapper .books .book-description .rating form input[type=submit]:hover {
+  background-color: #37a02d;
+  cursor: pointer;
+  color: whitesmoke;
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 720px) {
+  body .container .dashboard-container .book-rating-wrapper .book-wrapper .books .book-description .tags ul li {
+    padding: 0.3rem 0.5rem;
+    margin: 0.5rem 0.5rem 0 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body .container .dashboard-container .book-rating-wrapper .book-rating form input[type=text],
+body .container .dashboard-container .book-rating-wrapper .book-rating form input[type=submit] {
+    font-size: revert;
+    padding: 0.5rem;
+  }
+  body .container .dashboard-container .book-rating-wrapper .book-rating form input[type=text] {
+    width: 75%;
+  }
+  body .container .dashboard-container .book-rating-wrapper .book-rating img {
+    width: 100%;
+  }
+  body .container .dashboard-container .book-rating-wrapper .book-wrapper {
+    padding: 1rem 0.5rem;
+  }
+  body .container .dashboard-container .book-rating-wrapper .book-wrapper .books {
+    margin: 1rem 0;
+  }
+  body .container .dashboard-container .book-rating-wrapper .book-wrapper .books .book-thumb img {
+    max-width: 125px;
+  }
+  body .container .dashboard-container .book-rating-wrapper .book-wrapper .books .book-description {
+    padding: 0;
+  }
+  body .container .dashboard-container .book-rating-wrapper .book-wrapper .books .book-description .title h2 {
+    font-size: 1.5rem;
+  }
+  body .container .dashboard-container .book-rating-wrapper .book-wrapper .books .book-description .author h3 {
+    padding: 0.2rem 0 0.3rem 0;
+  }
+  body .container .dashboard-container .book-rating-wrapper .book-wrapper .books .book-description .tags {
+    margin: 0;
+  }
+  body .container .dashboard-container .book-rating-wrapper .book-wrapper .books .book-description .tags ul li {
+    font-size: 0.7rem;
+    margin: 0.3rem 0.3rem 0 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body .container .dashboard-container {
+    grid-template-areas: "side side side side side side" "main main main main main main";
+  }
+  body .container .dashboard-container .sidebar-wrapper .sidebar nav ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body .container .dashboard-container .sidebar-wrapper .sidebar nav ul li {
+    margin: 0;
+    width: 50%;
+  }
+  body .container .dashboard-container .sidebar-wrapper .sidebar nav ul li a {
+    justify-content: center;
+    font-size: 0.8rem;
+    padding: 0.3rem 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=rate_book_style.css.map */
