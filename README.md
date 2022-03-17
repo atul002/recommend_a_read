@@ -18,8 +18,12 @@ The Project can be deployed on your localhost as follows:
 4 - Download & Setup MySQL Workbench from here --> https://dev.mysql.com/downloads/windows/installer/8.0.html
 
 5 - Credentials from MySQL Workbench:
-                                     id - root
-                                     pass - Root@002##
+
+                                     id - "root"
+                                     
+                                     pass - "Root@002##"
+                                     
+                                     
 
 6 - Create Database 'Book Recommendation' and Tables 'User', 'Rating', 'Book' as specified in the Project Report File
 
