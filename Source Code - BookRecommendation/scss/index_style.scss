@@ -1,0 +1,461 @@
+/*Importing Basic Stylesheet*/
+@import 'basic_style';
+
+/*Importing Color Schema*/
+@import 'color_schema';
+
+/*Importing Stylesheet for header*/
+@import 'header_style';
+
+/*Importing Stylesheet for Footer*/
+@import 'footer_style';
+
+
+/*Defining box shadows*/
+@mixin box_shadow1 {
+    box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
+}
+
+@mixin box_shadow2 {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+@mixin box_shadow3 {
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 20%)
+    
+}
+
+/*Body Styling starts*/
+body {
+
+    /*Middle Content Wrapper styling starts*/
+    .middle-content-wrapper {
+
+        .search-content-wrapper {
+            h1 {
+                padding: 1rem;
+                text-align: center;
+                margin: 2rem auto 0.5rem auto;
+                font-size: 1.8rem;
+                
+            }
+
+            p {
+                color: $text_color1;
+                text-align: center;
+                max-width: 80ch;
+                margin: 0 auto;
+                padding: 0 2rem 2rem 2rem;
+            }
+
+            .search-content {
+                margin: 1rem;
+                text-align: center;
+                form {
+                    padding: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    
+                    input[type="text"],
+                    input[type="submit"] {
+                        outline: none;
+                        border: 1px solid $border_color3;
+                        padding: 1rem;
+                        font-size: 1rem;
+                        @include box_shadow2;
+                    }
+
+                    input[type="text"] {
+                        width: 60%;
+                        border-bottom-left-radius: 1rem;
+                        border-top-left-radius: 1rem;
+                        
+                    }
+
+                    input[type="text"]:focus {
+                        border-color: $border_color1;
+                    }
+
+                    
+
+                    input[type="submit"]:hover {
+                            cursor: pointer;
+                            background-color: $bg_color3;
+                            color: white;
+                            transition: .3s;
+                    }
+                        
+
+                        
+                    
+
+                }
+
+                img {
+                    width: 80%;
+                    max-height: 2rem;
+                }
+            }
+        }
+    }
+
+    /*Middle Conten Wrapper Styling ends*/
+
+
+
+    /*Category Styling Starts*/
+
+    .category-wrapper {
+        h2 {
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .categories {
+            margin: 1rem;
+            padding: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            .cat {
+                width: 25%;
+                margin: 1rem;
+                
+              
+
+
+                a {   
+                    height: 8rem;
+                    border: 1px solid $border_color3;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: .2rem;
+                    text-decoration: none;  
+                    font-size: 1.2rem;
+                    font-family: 'Courgette', cursive;
+                }
+
+
+               
+                
+                
+                a:hover {
+                    color: transparent;
+                    border: none;
+                }
+
+               
+
+            }
+
+            .cat:hover {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                transition: .3s;
+        
+
+                a {
+                    color: transparent;
+                }
+            }
+            
+            .cat-1:hover {
+                background-image: url(../images/science_fiction.png);
+            }
+
+            .cat-2:hover {
+                background-image: url(../images/adventure.png);
+            }
+
+            .cat-3:hover {
+                background-image: url(../images/fantasy.png);
+            }
+
+            .cat-4:hover {
+                background-image: url(../images/time_travel.png);
+            }
+
+            .cat-5:hover {
+                background-image: url(../images/young_adult.png);
+            }
+
+            .cat-6:hover {
+                background-image: url(../images/romance.png);
+            }
+            
+            .cat-7:hover {
+                background-image: url(../images/thriller.png);
+            }
+
+            .cat-8:hover {
+                background-image: url(../images/horror.png);
+            }
+
+            .cat-9:hover {
+                background-image: url(../images/mystery.png);
+            }
+            
+            .cat-10:hover {
+                background-image: url(../images/drama.png);
+            }
+            
+            .cat-11:hover {
+                background-image: url(../images/biography.png);
+            }
+
+            .cat-12:hover {
+                background-image: url(../images/non_fiction.png);
+            }
+        }
+    }
+    /*Category Styling ends*/
+
+
+
+
+    /*Book Styling Starts*/
+
+    .featured-books {
+        margin: 2rem auto;
+        padding: 1rem;
+
+        h1 {
+            margin: 2rem auto;
+            text-align: center;
+        }
+
+        .books-wrapper {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            
+            .books {
+                display: flex;
+                margin: 2rem auto;
+                .book-thumb {
+                    img {
+                        vertical-align: middle;
+                        border-radius: 0 6% 6% 0/4%;
+                        max-width: 150px;
+                        @include box_shadow3;
+                    }
+                }
+
+                .book-description {
+                    padding: 0 1rem;
+                    margin: 0 1rem;
+
+                    .title {
+                        h2 {
+                            font-family: 'Itim', cursive;
+                            font-size: 2rem;
+                        }
+                    }
+
+                    .author {
+                        h3 {
+                            padding: .2rem 0 .5rem 0;  
+                            font-family: 'Courgette', cursive;
+                        }
+                    }
+
+                    .summary {
+                        font-family: 'Spline Sans', sans-serif;
+
+                        p {
+                            color: $text_color3;
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 4;
+                            -webkit-box-orient: vertical;
+                            max-width: 100ch;
+                            font-family: 'Spline Sans', sans-serif;
+
+                        }
+                    }
+
+                    .tags {
+                        margin: .5rem 0;
+
+                        ul {
+                            display: flex;
+                            flex-wrap: wrap;
+                            li {
+                                padding: .5rem 1rem;
+                                margin: .5rem .5rem 0 0;
+                                list-style: none;
+                                border: 1px solid $border_color3;
+                                border-radius: 1px;
+                                background-color: $bg_color5;
+                                
+                                @include box_shadow3;
+
+                                a {
+                                    text-decoration: none;
+                                    color: $text_color4;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    /*Book Styling Ends*/
+}
+/*Body Styling ends*/
+
+
+
+/*Styling body for small screen sizes*/
+@media only screen and(max-width:720px) {
+    body {
+        .category-wrapper {
+            .categories {
+                .cat {
+                    width: 40%;
+                }
+            }
+        }
+        
+        .featured-books {
+            .books-wrapper {
+                .books {
+                    .book-description {
+                        .tags {
+                            ul {
+                                li {
+                                    padding: .3rem .5rem;
+                                    margin: .5rem .5rem 0 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+
+    }
+}
+
+
+
+
+/*Styling body for small screen sizes*/
+@media only screen and(max-width:600px) {
+    body {
+        .middle-content-wrapper {
+            .search-content-wrapper {
+                h1 {
+                    font-size: 1.5rem;
+                    padding: 0 1rem;
+                    margin: 1rem auto;
+                }
+
+                p {
+                    padding: 0 1rem;
+                }
+
+                .search-content {
+                    form {
+
+                        input[type="text"],
+                        input[type="submit"] {
+                            font-size: revert;
+                            padding: .5rem;
+                        }
+
+                        input[type="text"] {
+                            width: 75%;
+                            
+
+                        }
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                
+            }
+        }      
+
+        .category-wrapper {
+            h2 {
+                margin-top: 2rem;
+            }
+
+            .categories {
+                margin: 0 auto;
+                padding: 1rem 0;
+
+                .cat {
+                    margin: .5rem;
+                    width: 40%;
+                    
+                    a {
+                        height: 6rem;
+                    }
+                }
+            }
+        }
+        
+        .featured-books {
+            margin: 0 auto;
+            padding: 1rem 0.5rem;
+            h1 {
+                margin: 0;
+                font-size: 1.7rem;
+            }
+
+            .books-wrapper {
+                padding: 1rem 0.5rem;
+
+                .books {
+                    margin: 1rem 0;
+                    .book-thumb {
+                        img {
+                            max-width: 125px;
+                        }
+                    }
+
+                    .book-description {
+                        padding: 0;
+
+                        .title {
+                            h2 {
+                                font-size: 1.5rem;
+                            }
+                        }
+
+                        .author {
+                            h3 {
+                                padding: .2rem 0 .3rem 0;
+                            }
+                        }
+                        
+                        .tags {
+                            margin: 0;
+                            ul {
+                                li {
+                                    font-size: .7rem;
+                                    margin: 0.3rem 0.3rem 0 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+
+    }
+}
+

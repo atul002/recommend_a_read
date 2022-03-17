@@ -1,0 +1,393 @@
+/*Importing Basic Stylesheet*/
+@import 'basic_style';
+
+/*Importing Color Schema*/
+@import 'color_schema';
+
+/*Importing Stylesheet for header*/
+@import 'header_style';
+
+/*Importing Stylesheet for Footer*/
+@import 'footer_style';
+
+
+/*Defining box shadows*/
+@mixin box_shadow1 {
+    box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
+}
+
+@mixin box_shadow2 {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+@mixin box_shadow3 {
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 20%)
+    
+}
+
+
+
+
+/*Styling body-container starts*/
+body {
+    width: 100%;
+    margin: auto;
+    
+    color: $text_color3;
+
+    .container {
+        .dashboard-container {
+            display: grid;
+            grid-template-areas: 'side main main main main main';
+            .sidebar-wrapper {
+                grid-area: side;                
+                background-color: $bg_color5;
+                .sidebar {
+                    nav {
+
+                        ul {
+                            padding: 1rem 0;
+                            li {
+                                                                                                                             
+                                list-style: none;
+                                margin: .5rem 0 1rem 0;
+                                a {
+                                    display: flex;
+                                    align-items: baseline;
+                                    text-decoration: none;
+                                    border: none;
+                                    color: $text_color4;
+                                    cursor: pointer;
+                                    padding: .5rem 1rem;
+
+                                    .fa {
+                                        color: $text_color4;
+                                        margin: .5rem .2rem;
+                                    }
+                                }
+                            }
+
+                            li:hover {
+                                background-color: $bg_color7;
+                            }
+
+                            .active {
+                                background-color: $bg_color4;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .book-rating-wrapper {
+                grid-area: main;
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+              
+                .book-rating {
+                    margin: 1rem;
+                    text-align: center;
+                    form {
+                        padding: 1rem;
+                        display: flex;
+                        justify-content: center;
+                        
+                        input[type="text"],
+                        input[type="submit"] {
+                            outline: none;
+                            border: 1px solid $border_color3;
+                            padding: 1rem;
+                            font-size: 1rem;
+                            @include box_shadow2;
+                        }
+    
+                        input[type="text"] {
+                            width: 60%;
+                            border-bottom-left-radius: 1rem;
+                            border-top-left-radius: 1rem;
+                            
+                        }
+    
+                        input[type="text"]:focus {
+                            border-color: $border_color1;
+                        }
+    
+                        
+    
+                        input[type="submit"]:hover {
+                                cursor: pointer;
+                                background-color: $bg_color3;
+                                color: white;
+                                transition: .3s;
+                        }
+                            
+    
+                            
+                        
+    
+                    }
+    
+                    img {
+                        width: 80%;
+                        max-height: 2rem;
+                    }
+                }
+                
+                
+
+                .book-wrapper {
+                    padding: 1rem;
+                    
+                    h2 {
+                        text-align: center;
+                    }
+                    
+                    .books {
+                        display: flex;
+                        margin: 2rem auto;
+                        .book-thumb {
+                            img {
+                                vertical-align: middle;
+                                border-radius: 0 6% 6% 0/4%;
+                                max-width: 150px;
+                                @include box_shadow3;
+                            }
+                        }
+        
+                        .book-description {
+                            padding: 0 1rem;
+                            margin: 0 1rem;
+        
+                            .title {
+                                h2 {
+                                    font-family: 'Itim', cursive;
+                                    font-size: 2rem;
+                                    text-align: left;
+                                }
+                            }
+        
+                            .author {
+                                h3 {
+                                    padding: .2rem 0 .5rem 0;  
+                                    font-family: 'Courgette', cursive;
+                                }
+                            }
+        
+                            .summary {
+                                font-family: 'Spline Sans', sans-serif;
+        
+                                p {
+                                    color: $text_color3;
+                                    overflow: hidden;
+                                    display: -webkit-box;
+                                    -webkit-line-clamp: 4;
+                                    -webkit-box-orient: vertical;
+                                    max-width: 100ch;
+                                    font-family: 'Spline Sans', sans-serif;
+        
+                                }
+                            }
+        
+                            .tags {
+                                margin: .5rem 0;
+        
+                                ul {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    li {
+                                        padding: .5rem 1rem;
+                                        margin: .5rem .5rem 0 0;
+                                        list-style: none;
+                                        border: 1px solid $border_color3;
+                                        border-radius: 1px;
+                                        background-color: $bg_color5;
+                                        
+                                        @include box_shadow3;
+        
+                                        a {
+                                            text-decoration: none;
+                                            color: $text_color4;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .rating {
+                                form {
+                                    padding: 1rem 0;
+
+                                    label {
+                                        font-weight: bold;
+
+                                        select {
+                                            border: 1px solid $border_color3;
+                                            padding: .5rem;
+                                        }
+                                    }
+
+                                    input[type="submit"] {
+                                        padding: .5rem 1rem;
+                                        background-color: $bg_color6;
+                                        border: 1px solid $border_color3;
+                                        @include box_shadow1;
+                                        font-weight: bold;
+                                    }
+
+                                    input[type="submit"]:hover {
+                                        background-color: $bg_color3;
+                                        cursor: pointer;
+                                        color: $text_color4;
+                                        font-weight: normal;
+                                    }
+                                }
+                            }
+                        }
+        
+                    }
+                }
+
+            }
+
+
+
+
+        }
+    }
+}
+@media only screen and(max-width:720px) {
+    
+    body {
+        .container {
+            .dashboard-container {
+                .book-rating-wrapper {
+                    .book-wrapper {
+                        .books {
+                            .book-description {
+                                .tags {
+                                    ul {
+                                        li {
+                                            padding: .3rem .5rem;
+                                            margin: .5rem .5rem 0 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    
+    
+}
+@media only screen and(max-width:600px) {
+    body {
+        .container {
+            .dashboard-container {
+
+                .book-rating-wrapper {
+                    .book-rating {
+                        form {
+    
+                            input[type="text"],
+                            input[type="submit"] {
+                                font-size: revert;
+                                padding: .5rem;
+                            }
+    
+                            input[type="text"] {
+                                width: 75%;
+                                
+    
+                            }
+                        }
+    
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .book-wrapper {
+                        padding: 1rem 0.5rem;
+        
+                        .books {
+                            margin: 1rem 0;
+                            .book-thumb {
+                                img {
+                                    max-width: 125px;
+                                }
+                            }
+        
+                            .book-description {
+                                padding: 0;
+        
+                                .title {
+                                    h2 {
+                                        font-size: 1.5rem;
+                                    }
+                                }
+        
+                                .author {
+                                    h3 {
+                                        padding: .2rem 0 .3rem 0;
+                                    }
+                                }
+                                
+                                .tags {
+                                    margin: 0;
+                                    ul {
+                                        li {
+                                            font-size: .7rem;
+                                            margin: 0.3rem 0.3rem 0 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                
+            }
+        }
+        
+    }
+}
+
+
+
+@media only screen and (max-width:480px) {
+
+    body {
+        .container {
+            .dashboard-container {
+                grid-template-areas: 'side side side side side side'
+                                     'main main main main main main';
+
+                .sidebar-wrapper {
+                    .sidebar {
+                        nav {
+                            ul {
+                                padding: 0;
+                                display: flex;
+                                flex-wrap: wrap;
+                                li {
+                                    margin: 0;
+                                    width: 50%;
+                                    a {
+                                        justify-content: center;
+                                        font-size: .8rem;
+                                        padding: .3rem .5rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

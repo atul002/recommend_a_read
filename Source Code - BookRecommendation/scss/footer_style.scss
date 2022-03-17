@@ -1,0 +1,43 @@
+@import "color_schema";
+
+/*Styling Footer Starts*/
+footer {
+    background-color: $bg_color5;
+
+    .footer-nav {
+        padding: 1rem;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            
+
+            li {
+                list-style: none;
+                
+                a {
+                    padding: .5rem;
+                    text-decoration: none;
+                    color: $text_color4;
+                    font-family: 'Ubuntu', sans-serif;
+
+                }
+
+                a:hover {
+                   background-color: $bg_color5;
+                   border: 1px solid $border_color3;
+                   border-radius: .5rem;
+                }
+            }
+
+            
+        }
+    }
+
+    p {
+        color: $text_color4;
+        padding: 1rem;
+        text-align: center;
+    }
+}
+/*Styling Footer Ends*/

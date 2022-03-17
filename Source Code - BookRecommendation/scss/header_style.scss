@@ -1,0 +1,111 @@
+//defining mixin
+@mixin box_shadow1 {
+    box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
+}
+
+/*Styling Header*/
+body {
+    .container {
+        header {
+            display: flex;
+            padding: 0 1rem;
+            align-items: center;
+            justify-content: space-between;
+            @include box_shadow1;
+
+            .logo {
+                max-width: 50%;
+                a {
+                    display: block;
+                    img {
+                        max-width: 16rem;
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+            nav {
+                max-width: 50%;
+                
+                ul {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    .nav-button {
+                        list-style: none;
+                        border: 1px solid;
+                        margin-right: .5rem;
+                        @include box_shadow1;
+
+                        a {
+                            text-decoration: none;
+                            color: $text_color1;
+                            padding: .5rem 1rem;
+                            display: inline-block;
+
+                        }
+
+                        
+
+                        
+                    }
+
+                    
+
+                    .nav-bt-1 {
+                        border-color: $border_color1;
+
+                        :hover {
+                            background-color: $bg_color1;
+                            color: $text_color4;
+                        }
+                    }
+
+                    .nav-bt-2 {
+                        border-color: $border_color2;
+                        
+
+                        :hover {
+                            background-color: $bg_color2;
+                            color: $text_color4;
+                        }
+                    }
+
+                    
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 600px) {
+    body {
+        .container {
+            header {
+                padding: 0;
+
+                .logo {
+                    a {
+                        img {
+                         max-width: 10rem;
+                     }
+                    }
+                }
+
+                nav {
+                    ul {
+                        .nav-button {
+                            a {
+                                padding: .3rem .5rem;
+                                font-size: .8rem;
+                            }
+                            
+    
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

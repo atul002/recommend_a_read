@@ -1,0 +1,171 @@
+/*Importing Basic Stylesheet*/
+@import 'basic_style';
+
+/*Importing Color Schema*/
+@import 'color_schema';
+
+/*Importing Stylesheet for header*/
+@import 'header_style';
+
+/*Importing Stylesheet for Footer*/
+@import 'footer_style';
+
+
+/*Defining box shadows*/
+@mixin box_shadow1 {
+    box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
+}
+
+@mixin box_shadow2 {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+@mixin box_shadow3 {
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 20%)
+    
+}
+
+* {
+    font-family: 'Spline Sans', sans-serif;
+
+}
+body {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+
+    .form-container-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+
+        .form-container{
+            margin: .5rem auto 2rem auto;
+            
+            @include box_shadow2;
+            padding: 2rem;
+
+            .form-logo {
+                
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 2rem;
+
+                h1 {
+                    font-size: 1rem;
+                    color: $text_color1;
+                    border-left: 2px solid $border_color1;
+                    padding: .5rem;
+                    text-align: left;
+                    width: 100%;
+                    margin-left: 2rem;
+                }
+
+                img {
+                    max-width: 6rem;
+                    max-height: 6rem;
+                    margin: -5rem auto 1rem auto;
+                }
+        
+            }
+        
+            .login-container {
+                .name,
+                .email, 
+                .password {
+                    
+                    margin: 1rem;
+                    label {
+                        color: $text_color3;
+                        font-size: .8rem;
+                        font-weight: bold;
+                    }
+
+                    input[type="text"],
+                    input[type="email"],
+                    input[type="password"] {
+                        outline: none;
+                        border: none;
+                        font-size: 1rem;
+                        border-bottom: 1px solid $border_color3;
+                        width: 100%;
+                        box-sizing: border-box;
+                    }
+
+                    input[type="text"]:hover,
+                    input[type="email"]:hover,
+                    input[type="password"]:hover,
+                    input[type="text"]:focus,
+                    input[type="email"]:focus,
+                    input[type="password"]:focus {
+                        border-color: $border_color1;
+                    }
+                    
+                }
+
+                
+            }
+
+            
+            button {
+
+                padding: .5rem 1rem;
+                color: $text_color2;
+                border: none;
+                @include box_shadow1;
+                margin: 1rem;
+            }
+
+            .reset:hover {
+                background-color: $bg_color2;
+                
+            }
+
+            button:hover {
+                background-color: $bg_color3;
+                color: $text_color4;
+            }
+
+           
+            
+        }
+    }
+
+    .form-container-wrapper::before {
+        content: " ";
+        display: block;
+        height: 50px;
+        width: 100%;
+    }
+
+    
+    
+
+          
+}
+
+
+@media only screen and (max-width: 480px) {
+    
+    body {
+        
+        .form-container-wrapper {
+            .form-container {
+                margin: 1rem auto; 
+                padding: 2rem;
+
+                .form-logo img {
+                    max-width: 5rem;
+                    max-height: 5rem;
+                }
+            }
+        }
+
+        .form-container-wrapper::before {
+         height: 50px;
+        }
+    }
+}

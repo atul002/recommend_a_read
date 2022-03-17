@@ -1,0 +1,298 @@
+/*Importing Basic Stylesheet*/
+@import 'basic_style';
+
+/*Importing Color Schema*/
+@import 'color_schema';
+
+/*Importing Stylesheet for header*/
+@import 'header_style';
+
+/*Importing Stylesheet for Footer*/
+@import 'footer_style';
+
+
+/*Defining box shadows*/
+@mixin box_shadow1 {
+    box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
+}
+
+@mixin box_shadow2 {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+@mixin box_shadow3 {
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 20%)
+    
+}
+
+
+
+
+/*Styling body-container starts*/
+body {
+    width: 100%;
+    margin: auto;
+    
+    color: $text_color3;
+
+    .container {
+        .dashboard-container {
+            display: grid;
+            grid-template-areas: 'side main main main main main';
+            .sidebar-wrapper {
+                grid-area: side;                
+                background-color: $bg_color5;
+                .sidebar {
+                    nav {
+
+                        ul {
+                            padding: 1rem 0;
+                            li {
+                                                                                                                             
+                                list-style: none;
+                                margin: .5rem 0 1rem 0;
+                                a {
+                                    display: flex;
+                                    align-items: baseline;
+                                    text-decoration: none;
+                                    border: none;
+                                    color: $text_color4;
+                                    cursor: pointer;
+                                    padding: .5rem 1rem;
+
+                                    .fa {
+                                        color: $text_color4;
+                                        margin: .5rem .2rem;
+                                    }
+                                }
+                            }
+
+                            li:hover {
+                                background-color: $bg_color7;
+                            }
+
+                            .active {
+                                background-color: $bg_color4;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            .books-container {
+                grid-area: main;
+
+                .books-read-wrapper {
+    
+                    h3 {
+                        padding: 1rem 0 0 0;
+                        margin: 1rem;
+                        border-bottom: 1px solid $border_color3;
+            
+                    }
+    
+                    .books-read {                   
+                        display: flex;
+                        flex-wrap: wrap;
+                        max-height: 50vh;
+                        overflow-y: scroll;
+                        padding: .5rem 1rem;
+                        text-align: center;
+                        .book {
+                            margin: 1rem .5rem;
+                            width: 20%;
+
+                            img {
+                                max-width: 125px;
+                                border-radius: 0 6% 6% 0/4%;
+                            }
+
+                            h4 {
+                                max-width: 125px;
+                                margin: auto;
+                            }
+    
+                        }
+    
+                        
+                    }
+                }
+
+
+                .recommended-books-wrapper {
+                    margin: 1rem auto;
+
+                    h3 {
+                        padding: 1rem 0 0 0;
+                        margin: 1rem;
+                        border-bottom: 1px solid $border_color3;
+                        
+                    }
+    
+                    .recommended-books {
+
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding: .5rem 1rem;
+                        max-height: 50vh;
+                        overflow-y: scroll;
+                        text-align: center;
+                        .book {
+                            width: 20%;
+                            margin: 1rem .5rem;
+
+                            img {
+                                border-radius: 0 6% 6% 0/4%;
+                                max-width: 125px;
+                            }
+
+                            h4 {
+                                max-width: 125px;
+                                margin: auto;
+                            }
+    
+                        }
+                    }
+                }
+    
+            }
+            
+            
+        }
+    }
+}
+
+@media only screen and (max-width:800px) {
+    
+    body {
+        .container {
+            .dashboard-container {
+                grid-template-areas: 'side side side side side side'
+                                     'main main main main main main';
+
+                .sidebar-wrapper {
+                    .sidebar {
+                        nav {
+                            ul {
+                                padding: 0;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                li {
+                                    margin: 0;
+
+                                    a {
+                                        font-size: .8rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .books-container {
+
+                    .books-read-wrapper {
+                        h3 {
+                            padding: 0;
+                        }
+
+                        .books-read {
+                            .book {
+                                margin: .5rem;
+
+                                img {
+                                    max-width: 100px;
+                                }
+                            }
+                        }
+                    }
+
+                    .recommended-books-wrapper {
+                        h3 {
+                            padding: 0;
+                        }
+                        .recommended-books {
+                            .book {
+                                margin: .5rem;
+
+                                img {
+                                    max-width: 100px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:480px) {
+
+    body {
+        .container {
+            .dashboard-container {
+
+
+                .sidebar-wrapper {
+                    .sidebar {
+                        nav {
+                            ul {
+                                flex-wrap: wrap;
+                                li {
+                                    margin: 0;
+                                    width: 50%;
+                                    
+                                    a {
+                                        justify-content: center;
+                                        font-size: .8rem;
+                                        padding: .3rem .5rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .books-container {
+
+                    .books-read-wrapper {
+                        h3 {
+                            padding: 0;
+                        }
+
+                        .books-read {
+                            .book {
+                                margin: .5rem;
+                                width: 40%;
+
+                                img {
+                                    max-width: 100px;
+                                }
+                            }
+                        }
+                    }
+
+                    .recommended-books-wrapper {
+                        h3 {
+                            padding: 0;
+                        }
+                        .recommended-books {
+                            .book {
+                                margin: .5rem;
+                                width: 40%;
+
+                                img {
+                                    max-width: 100px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

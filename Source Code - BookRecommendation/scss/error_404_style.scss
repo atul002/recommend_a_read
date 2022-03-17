@@ -1,0 +1,89 @@
+/*Importing Basic Stylesheet*/
+@import 'basic_style';
+
+/*Importing Color Schema*/
+@import 'color_schema';
+
+/*Importing Stylesheet for header*/
+@import 'header_style';
+
+/*Importing Stylesheet for Footer*/
+@import 'footer_style';
+
+
+/*Defining box shadows*/
+@mixin box_shadow1 {
+    box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
+}
+
+@mixin box_shadow2 {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+@mixin box_shadow3 {
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 20%)
+    
+}
+
+* {
+    font-family: 'Spline Sans', sans-serif;
+
+}
+
+body {
+    width: 100%;
+    
+
+    .container {
+        .error-wrapper {
+            margin: 1rem;
+            height: 100vh;
+
+            .error-image {
+                padding: 1rem;
+                text-align: center;
+    
+                img {
+                    max-width: 100%;
+                    
+                }
+            }
+
+            .error-msg {    
+                margin: 1rem auto;
+                text-align: center;
+
+                p {
+                    font-size: 1rem;
+                }
+                
+                button {
+                    padding: 1rem 2rem;
+                    margin: 1rem auto;
+                    background-color: white;
+                    border: 1px solid $border_color3;
+                    border-radius: 2rem;
+                    @include box_shadow1;
+
+                    a {
+                        font-size: 1rem;
+                        text-decoration: none;
+                    }
+                }
+
+                button:hover {
+                    background-color: $bg_color1;
+
+                    a {
+                        color: $text_color4;
+                    }
+                    
+                }
+            }
+        }
+    }
+    
+
+          
+}
+

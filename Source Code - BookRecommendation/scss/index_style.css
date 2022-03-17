@@ -1,0 +1,436 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@media only screen and (max-width: 600px){
+    body {
+        font-size: 12px;
+    }    
+}
+
+.header-container {
+    max-width: 980px;
+    margin: 0px auto;
+    display: flex;
+    box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
+}
+
+.logo-area,
+.nav {
+    width: 50%;
+}
+
+@media only screen and (max-width: 720px){
+    .header-container {
+        display: block;
+        padding-bottom: 10px;
+    }
+
+    .logo-area,
+    .nav {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.logo-area img {
+    max-width: 300px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: right;
+    padding: 20px 10px;
+    margin: 15px 0px;
+}
+
+@media only screen and (max-width: 720px){
+    .logo-area img {
+        height: 60px;
+    }    
+
+    .nav ul {
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+         
+    }
+}
+
+
+
+.nav ul li {
+    list-style: none;
+    display: block;
+    float: left;
+    margin: 0px 5px;
+}
+
+.nav ul li a {
+    padding: 15px 15px;
+    text-decoration: none;
+    color: rgb(36, 33, 33);
+    font-size: 120%;
+    color: #626260;
+}
+
+.nav ul li a:hover {
+    border-bottom: 5px solid #f9705a;
+    color: #f9705a;
+    transition: .1s;
+}
+
+@media only screen and (max-width: 720px){
+    .nav ul li {
+        float: none;
+        margin: 0;
+    }
+
+    .nav ul li a {
+        font-size: 100%;
+        margin: 0px 5px;
+        padding: 5px 5px 5px 5px;
+
+    }
+
+}
+
+
+.active {
+    font-weight: bolder;
+}
+
+
+
+.main-container {
+    max-width: 980px;
+    margin: 0px auto;
+    color: #3f3f3c;
+    padding: 20px;
+}
+
+.main-container h1 {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.main-container p {
+    font-size: 120%;
+    padding: 20px;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 600px){
+    .main-container {
+        padding: 10px;
+    }
+
+    .main-container h1{
+        margin-top: 10px;
+        font-size: 150%;
+    }
+    
+}
+.search-container {
+    max-width: 980px;
+    display: flex;
+    max-width: 720px;
+    box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
+    border-bottom: .8px solid #b0b2b3;
+    color: #3f3f3c;
+    padding: 10px 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box {
+    margin: 5px;
+    width: 90%;
+}
+
+.search-box input[type=text] {
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 110%;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.search-box input[type=text]:focus {
+    outline: none;
+    color: #626260;
+}
+
+@media only screen and (max-width: 600px) {
+    .search-container{
+        margin: 0;
+    }
+}
+.main-container img {
+    height: 50px;
+    width: 100%;
+}
+
+.category-container {
+    max-width: 980px;
+    margin: 0px auto;
+    color: #3f3f3c;
+    padding: 20px;
+}
+
+.category-container h1 {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories {
+    color: #4e4e4e;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 25%;
+    height: 100px;
+    margin: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.categories:hover,
+.categories:focus {
+    border-color: #e0b472;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    transition: .2s;
+    
+}
+
+.cat-1:hover,
+.cat-1:focus {
+    background-image: url(../images/science_fiction.png); 
+}
+
+.cat-2:hover,
+.cat-2:focus {
+    background-image: url(../images/adventure.png);
+}
+
+.cat-3:hover,
+.cat-3:focus {
+    background-image: url(../images/fantasy.png);
+}
+
+.cat-4:hover,
+.cat-4:focus {
+    background-image: url(../images/time_travel.png);
+}
+
+.cat-5:hover,
+.cat-5:focus {
+    background-image: url(../images/young_adult.png);
+}
+
+.cat-6:hover,
+.cat-6:focus {
+    background-image: url(../images/romance.png);
+}
+
+.cat-7:hover,
+.cat-7:focus {
+    background-image: url(../images/thriller.png);
+}
+
+.cat-8:hover,
+.cat-8:focus {
+    background-image: url(../images/horro.png);
+}
+
+.cat-9:hover,
+.cat-9:focus {
+    background-image: url(../images/mystery.png);
+}
+
+.cat-10:hover,
+.cat-10:focus {
+    background-image: url(../images/drama.png);
+}
+
+.cat-11:hover,
+.cat-11:focus {
+    background-image: url(../images/biography.png);
+}
+
+.cat-12:hover,
+.cat-12:focus {
+    background-image: url(../images/non_fiction.png);
+}
+
+.categories h2 {
+    font-weight: lighter;
+    font-size: 110%;
+}
+
+@media only screen and (max-width: 600px){
+    .category-container {
+        padding: 10px;
+    }
+
+    .category-container h1 {
+        padding: 10px;
+        margin: 10px;
+        font-size: 150%;
+    }
+
+    .categories {
+        width: calc(50% - 30px);
+        padding: 15px;
+        margin:5px ;
+        height: 80px;
+    }
+}
+.quote-container {
+    max-width: 980px;
+    margin: 0px auto;
+    color: #3f3f3c;
+    padding: 20px;
+}
+
+.quote-container h1 {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px auto;
+    margin-bottom: 30px;
+    
+}
+
+.quotes {
+    display: inline-flex;
+}
+
+.quote-cards {
+    position: relative;
+    width: 50%;
+    margin: 10px 20px;
+    text-align: center;
+    border: 1px solid #cecece;
+    box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
+    border-left: 5px solid #e0b472;
+
+}
+
+.left-quote {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+.right-quote {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 50px;
+    width: 50px;
+
+}
+
+.quote-desc {
+    padding: 50px 15px 20px 20px;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.quote-author {
+    padding: 0px 5px 20px 5px;
+    margin: 5px;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .quote-container{
+        padding: 10px;
+    }
+
+    .quote-container h1 {
+        margin: 0;
+    }
+
+    .quotes {
+        flex-wrap: wrap;
+    }
+    .quote-cards {
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: rgb(94, 94, 94);
+    color: #fff;
+}
+.footer-container {
+    max-width: 980px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer-top {
+    margin: 10px auto;
+    padding: 20px 0px 10px 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-top ul {
+    display: inline-flex;
+}
+.footer-top ul li {
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+}
+.footer-top ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.footer-top ul li a:hover {
+    color: #e0b472;
+    background-color: #3f3f3c;
+    padding: 10px;
+}
+
+.footer-bottom {
+    padding: 0px 20px 20px 0px;
+}
