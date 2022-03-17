@@ -1,0 +1,159 @@
+/*Importing Basic Stylesheet*/
+/*Setting up basic styling for all elements*/
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.945);
+}
+
+/*font-family: 'Courgette', cursive;*/
+/*font-family: 'Kaushan Script', cursive;*/
+/*font-family: 'Itim', cursive;*/
+/*font-family: 'Spline Sans', sans-serif;*/
+/*font-family: 'Ubuntu', sans-serif;*/
+/*Importing Color Schema*/
+/*Defining Basic Color Schema*/
+/*Importing Stylesheet for header*/
+/*Styling Header*/
+body .container header {
+  display: flex;
+  padding: 0 1rem;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
+}
+body .container header .logo {
+  max-width: 50%;
+}
+body .container header .logo a {
+  display: block;
+}
+body .container header .logo a img {
+  max-width: 16rem;
+  vertical-align: middle;
+}
+body .container header nav {
+  max-width: 50%;
+}
+body .container header nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+body .container header nav ul .nav-button {
+  list-style: none;
+  border: 1px solid;
+  margin-right: 0.5rem;
+  box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
+}
+body .container header nav ul .nav-button a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.685);
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+body .container header nav ul .nav-bt-1 {
+  border-color: #72b7da78;
+}
+body .container header nav ul .nav-bt-1 :hover {
+  background-color: #14a1e7;
+  color: whitesmoke;
+}
+body .container header nav ul .nav-bt-2 {
+  border-color: #f9715b52;
+}
+body .container header nav ul .nav-bt-2 :hover {
+  background-color: #f56e58;
+  color: whitesmoke;
+}
+
+@media only screen and (max-width: 600px) {
+  body .container header {
+    padding: 0;
+  }
+  body .container header .logo a img {
+    max-width: 10rem;
+  }
+  body .container header nav ul .nav-button a {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+/*Importing Stylesheet for Footer*/
+/*Defining Basic Color Schema*/
+/*Styling Footer Starts*/
+footer {
+  background-color: #333330;
+}
+footer .footer-nav {
+  padding: 1rem;
+}
+footer .footer-nav ul {
+  display: flex;
+  justify-content: center;
+}
+footer .footer-nav ul li {
+  list-style: none;
+}
+footer .footer-nav ul li a {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: "Ubuntu", sans-serif;
+}
+footer .footer-nav ul li a:hover {
+  background-color: #333330;
+  border: 1px solid #5f5a5a65;
+  border-radius: 0.5rem;
+}
+footer p {
+  color: whitesmoke;
+  padding: 1rem;
+  text-align: center;
+}
+
+/*Styling Footer Ends*/
+/*Defining box shadows*/
+* {
+  font-family: "Spline Sans", sans-serif;
+}
+
+/*Styling body-container starts*/
+body {
+  width: 100%;
+  margin: auto;
+  color: rgba(0, 0, 0, 0.788);
+}
+body .about-container {
+  margin: 1rem 0;
+  padding: 1rem;
+}
+body .about-container h1 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+body .about-container .project-description h2 {
+  font-size: 1.5rem;
+}
+body .about-container .project-description p {
+  margin: 1rem auto 2rem auto;
+  border-left: 2px solid #72b7da78;
+  padding-left: 0.5rem;
+}
+
+@media only screen and (max-width: 720px) {
+  body .about-container h1 {
+    font-size: 1.5rem;
+  }
+  body .about-container .project-description h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/*# sourceMappingURL=about_style.css.map */

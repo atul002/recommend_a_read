@@ -1,0 +1,328 @@
+/*Importing Basic Stylesheet*/
+/*Setting up basic styling for all elements*/
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.945);
+}
+
+/*font-family: 'Courgette', cursive;*/
+/*font-family: 'Kaushan Script', cursive;*/
+/*font-family: 'Itim', cursive;*/
+/*font-family: 'Spline Sans', sans-serif;*/
+/*font-family: 'Ubuntu', sans-serif;*/
+/*Importing Color Schema*/
+/*Defining Basic Color Schema*/
+/*Importing Stylesheet for header*/
+/*Styling Header*/
+body .container header {
+  display: flex;
+  padding: 0 1rem;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
+}
+body .container header .logo {
+  max-width: 50%;
+}
+body .container header .logo a {
+  display: block;
+}
+body .container header .logo a img {
+  max-width: 16rem;
+  vertical-align: middle;
+}
+body .container header nav {
+  max-width: 50%;
+}
+body .container header nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+body .container header nav ul .nav-button {
+  list-style: none;
+  border: 1px solid;
+  margin-right: 0.5rem;
+  box-shadow: 0 -5px 3px -3px #3a0c0c00, 0 5px 3px -3px #0000003b;
+}
+body .container header nav ul .nav-button a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.685);
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+body .container header nav ul .nav-bt-1 {
+  border-color: #72b7da78;
+}
+body .container header nav ul .nav-bt-1 :hover {
+  background-color: #14a1e7;
+  color: whitesmoke;
+}
+body .container header nav ul .nav-bt-2 {
+  border-color: #f9715b52;
+}
+body .container header nav ul .nav-bt-2 :hover {
+  background-color: #f56e58;
+  color: whitesmoke;
+}
+
+@media only screen and (max-width: 600px) {
+  body .container header {
+    padding: 0;
+  }
+  body .container header .logo a img {
+    max-width: 10rem;
+  }
+  body .container header nav ul .nav-button a {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+/*Importing Stylesheet for Footer*/
+/*Defining Basic Color Schema*/
+/*Styling Footer Starts*/
+footer {
+  background-color: #333330;
+}
+footer .footer-nav {
+  padding: 1rem;
+}
+footer .footer-nav ul {
+  display: flex;
+  justify-content: center;
+}
+footer .footer-nav ul li {
+  list-style: none;
+}
+footer .footer-nav ul li a {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: "Ubuntu", sans-serif;
+}
+footer .footer-nav ul li a:hover {
+  background-color: #333330;
+  border: 1px solid #5f5a5a65;
+  border-radius: 0.5rem;
+}
+footer p {
+  color: whitesmoke;
+  padding: 1rem;
+  text-align: center;
+}
+
+/*Styling Footer Ends*/
+/*Defining box shadows*/
+* {
+  font-family: "Spline Sans", sans-serif;
+}
+
+body .container .book-searched-wrapper .book-container {
+  /*Book Styling Starts*/
+  /*Book Styling Ends*/
+}
+body .container .book-searched-wrapper .book-container .book-searched {
+  margin: -100px auto 2rem auto;
+  padding: 1rem;
+  display: flex;
+  background-color: white;
+  max-width: 720px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+body .container .book-searched-wrapper .book-container .book-searched .book-thumb img {
+  max-width: 150px;
+  vertical-align: middle;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0 6% 6% 0/4%;
+}
+body .container .book-searched-wrapper .book-container .book-searched .book-data {
+  padding: 0 1rem;
+  margin: 0 1rem;
+}
+body .container .book-searched-wrapper .book-container .book-searched .book-data .title h1 {
+  font-family: "Itim", cursive;
+  font-size: 2rem;
+}
+body .container .book-searched-wrapper .book-container .book-searched .book-data .author h2 {
+  padding: 0.2rem 0 0.5rem 0;
+  font-family: "Courgette", cursive;
+}
+body .container .book-searched-wrapper .book-container .book-searched .book-data .summary p {
+  color: rgba(0, 0, 0, 0.788);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  max-width: 100ch;
+  font-family: "Spline Sans", sans-serif;
+}
+body .container .book-searched-wrapper .book-container .book-searched .book-data .tags {
+  margin: 0.5rem 0;
+}
+body .container .book-searched-wrapper .book-container .book-searched .book-data .tags ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+body .container .book-searched-wrapper .book-container .book-searched .book-data .tags ul li {
+  margin: 0.5rem 0.5rem 0 0;
+  list-style: none;
+  border: 1px solid #5f5a5a65;
+  border-radius: 1px;
+  background-color: #333330;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+body .container .book-searched-wrapper .book-container .book-searched .book-data .tags ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+body .container .book-searched-wrapper .book-container .recommended-books-wrapper {
+  margin: 2rem auto;
+  padding: 1rem;
+}
+body .container .book-searched-wrapper .book-container .recommended-books-wrapper h3 {
+  margin: 1rem auto;
+  text-align: center;
+}
+body .container .book-searched-wrapper .book-container .recommended-books-wrapper .recommended-books {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+body .container .book-searched-wrapper .book-container .recommended-books-wrapper .recommended-books .books {
+  display: flex;
+  margin: 2rem auto;
+}
+body .container .book-searched-wrapper .book-container .recommended-books-wrapper .recommended-books .books .book-thumb img {
+  vertical-align: middle;
+  border-radius: 0 6% 6% 0/4%;
+  max-width: 150px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+body .container .book-searched-wrapper .book-container .recommended-books-wrapper .recommended-books .books .book-data {
+  padding: 0 1rem;
+  margin: 0 1rem;
+}
+body .container .book-searched-wrapper .book-container .recommended-books-wrapper .recommended-books .books .book-data .title h1 {
+  font-family: "Itim", cursive;
+  font-size: 1.7rem;
+}
+body .container .book-searched-wrapper .book-container .recommended-books-wrapper .recommended-books .books .book-data .author h2 {
+  padding: 0.2rem 0 0.5rem 0;
+  font-family: "Courgette", cursive;
+}
+body .container .book-searched-wrapper .book-container .recommended-books-wrapper .recommended-books .books .book-data .summary {
+  font-family: "Spline Sans", sans-serif;
+}
+body .container .book-searched-wrapper .book-container .recommended-books-wrapper .recommended-books .books .book-data .summary p {
+  color: rgba(0, 0, 0, 0.788);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  max-width: 100ch;
+  font-family: "Spline Sans", sans-serif;
+}
+body .container .book-searched-wrapper .book-container .recommended-books-wrapper .recommended-books .books .book-data .tags {
+  margin: 0.5rem 0;
+}
+body .container .book-searched-wrapper .book-container .recommended-books-wrapper .recommended-books .books .book-data .tags ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+body .container .book-searched-wrapper .book-container .recommended-books-wrapper .recommended-books .books .book-data .tags ul li {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0.5rem 0 0;
+  list-style: none;
+  border: 1px solid #5f5a5a65;
+  border-radius: 1px;
+  background-color: #333330;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+body .container .book-searched-wrapper .book-container .recommended-books-wrapper .recommended-books .books .book-data .tags ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+body .container .book-searched-wrapper::before {
+  content: " ";
+  display: block;
+  height: 200px;
+  width: 100%;
+  background-image: url(../images/bg_dot1.png);
+  background-repeat: repeat;
+}
+
+@media only screen and (max-width: 720px) {
+  body .container .book-searched-wrapper .book-container .recommended-books-wrapper .recommended-books .books .book-data .tags ul li {
+    padding: 0.3rem 0.5rem;
+    margin: 0.5rem 0.5rem 0 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body .container .book-searched-wrapper .book-container .book-searched {
+    margin: -150px 0.5rem 3rem 0.5rem;
+    padding: 1rem 0.5rem;
+  }
+  body .container .book-searched-wrapper .book-container .book-searched .book-thumb img {
+    max-width: 125px;
+  }
+  body .container .book-searched-wrapper .book-container .book-searched .book-data {
+    padding: 0;
+  }
+  body .container .book-searched-wrapper .book-container .book-searched .book-data .title h1 {
+    font-size: 1.7rem;
+  }
+  body .container .book-searched-wrapper .book-container .book-searched .book-data .author h2 {
+    font-size: 1.2rem;
+  }
+  body .container .book-searched-wrapper .book-container .book-searched .book-data .tags {
+    margin: 0;
+  }
+  body .container .book-searched-wrapper .book-container .book-searched .book-data .tags ul li {
+    font-size: 0.7rem;
+    margin: 0.3rem 0.3rem 0 0;
+    padding: 0.3rem 0.5rem;
+  }
+  body .container .book-searched-wrapper .book-container .recommended-books-wrapper {
+    margin: 0 auto;
+    padding: 1rem 0.5rem;
+  }
+  body .container .book-searched-wrapper .book-container .recommended-books-wrapper h3 {
+    margin: 0;
+  }
+  body .container .book-searched-wrapper .book-container .recommended-books-wrapper .recommended-books {
+    padding: 1rem 0.5rem;
+  }
+  body .container .book-searched-wrapper .book-container .recommended-books-wrapper .recommended-books .books {
+    margin: 1rem 0;
+  }
+  body .container .book-searched-wrapper .book-container .recommended-books-wrapper .recommended-books .books .book-thumb img {
+    max-width: 125px;
+  }
+  body .container .book-searched-wrapper .book-container .recommended-books-wrapper .recommended-books .books .book-data {
+    padding: 0;
+  }
+  body .container .book-searched-wrapper .book-container .recommended-books-wrapper .recommended-books .books .book-data .title h1 {
+    font-size: 1.5rem;
+  }
+  body .container .book-searched-wrapper .book-container .recommended-books-wrapper .recommended-books .books .book-data .author h2 {
+    padding: 0.2rem 0 0.3rem 0;
+  }
+  body .container .book-searched-wrapper .book-container .recommended-books-wrapper .recommended-books .books .book-data .tags {
+    margin: 0;
+  }
+  body .container .book-searched-wrapper .book-container .recommended-books-wrapper .recommended-books .books .book-data .tags ul li {
+    font-size: 0.7rem;
+    margin: 0.3rem 0.3rem 0 0;
+    padding: 0.3rem 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=recommendation_style.css.map */
